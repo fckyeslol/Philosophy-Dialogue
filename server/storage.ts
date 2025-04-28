@@ -281,7 +281,11 @@ export class MemStorage implements IStorage {
   
   async createMember(insertMember: InsertMember): Promise<Member> {
     const id = this.memberCurrentId++;
-    const member: Member = { ...insertMember, id };
+    const member: Member = { 
+      ...insertMember, 
+      id,
+      imageUrl: insertMember.imageUrl || null 
+    };
     this.membersList.set(id, member);
     return member;
   }
@@ -297,7 +301,11 @@ export class MemStorage implements IStorage {
   
   async createBlogPost(insertBlogPost: InsertBlogPost): Promise<BlogPost> {
     const id = this.blogPostCurrentId++;
-    const blogPost: BlogPost = { ...insertBlogPost, id };
+    const blogPost: BlogPost = { 
+      ...insertBlogPost, 
+      id,
+      imageUrl: insertBlogPost.imageUrl || null
+    };
     this.blogPostsList.set(id, blogPost);
     return blogPost;
   }
@@ -356,8 +364,12 @@ export class MemStorage implements IStorage {
     const student: Student = { 
       ...insertStudent, 
       id, 
-      joinDate: insertStudent.joinDate || now,
-      isActive: insertStudent.isActive !== undefined ? insertStudent.isActive : true 
+      joinDate: now,
+      isActive: insertStudent.isActive !== undefined ? insertStudent.isActive : true,
+      phone: insertStudent.phone || null,
+      graduationYear: insertStudent.graduationYear || null,
+      major: insertStudent.major || null,
+      interests: insertStudent.interests || []
     };
     this.studentsList.set(id, student);
     return student;
@@ -380,7 +392,11 @@ export class MemStorage implements IStorage {
   
   async createResourceLink(insertResourceLink: InsertResourceLink): Promise<ResourceLink> {
     const id = this.resourceLinkCurrentId++;
-    const resourceLink: ResourceLink = { ...insertResourceLink, id };
+    const resourceLink: ResourceLink = { 
+      ...insertResourceLink, 
+      id,
+      description: insertResourceLink.description || null
+    };
     this.resourceLinksList.set(id, resourceLink);
     return resourceLink;
   }

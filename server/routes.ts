@@ -6,7 +6,9 @@ import {
   insertEventSchema, 
   insertBlogPostSchema, 
   insertMemberSchema, 
-  insertGalleryImageSchema 
+  insertGalleryImageSchema,
+  insertStudentSchema,
+  insertResourceLinkSchema
 } from "@shared/schema";
 import { z } from "zod";
 
@@ -97,6 +99,99 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ message: 'Invalid form data', errors: error.errors });
       }
       res.status(500).json({ message: 'Failed to submit contact form' });
+    }
+  });
+
+  // Students Repository Endpoints
+  // Get all students
+  app.get('/api/students', async (req, res) => {
+    try {
+      const students = await storage.getAllStudents();
+      res.json(students);
+    } catch (error) {
+      res.status(500).json({ message: 'Failed to fetch students' });
+    }
+  });
+
+  // Get student by ID
+  app.get('/api/students/:id', async (req, res) => {
+    try {
+      const id = parseInt(req.params.id);
+      const student = await storage.getStudent(id);
+      
+      if (!student) {
+        return res.status(404).json({ message: 'Student not found' });
+      }
+      
+      res.json(student);
+    } catch (error) {
+      res.status(500).json({ message: 'Failed to fetch student' });
+    }
+  });
+
+  // Add a new student
+  app.post('/api/students', async (req, res) => {
+    try {
+      const validatedData = insertStudentSchema.parse(req.body);
+      const student = await storage.createStudent(validatedData);
+      res.status(201).json(student);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: 'Invalid student data', errors: error.errors });
+      }
+      res.status(500).json({ message: 'Failed to add student' });
+    }
+  });
+
+  // Resource Links Endpoints
+  // Get all resource links
+  app.get('/api/resources', async (req, res) => {
+    try {
+      const resources = await storage.getAllResourceLinks();
+      res.json(resources);
+    } catch (error) {
+      res.status(500).json({ message: 'Failed to fetch resources' });
+    }
+  });
+
+  // Get resource links by category
+  app.get('/api/resources/category/:category', async (req, res) => {
+    try {
+      const { category } = req.params;
+      const resources = await storage.getResourceLinksByCategory(category);
+      res.json(resources);
+    } catch (error) {
+      res.status(500).json({ message: 'Failed to fetch resources' });
+    }
+  });
+
+  // Get resource link by ID
+  app.get('/api/resources/:id', async (req, res) => {
+    try {
+      const id = parseInt(req.params.id);
+      const resource = await storage.getResourceLink(id);
+      
+      if (!resource) {
+        return res.status(404).json({ message: 'Resource not found' });
+      }
+      
+      res.json(resource);
+    } catch (error) {
+      res.status(500).json({ message: 'Failed to fetch resource' });
+    }
+  });
+
+  // Add a new resource link
+  app.post('/api/resources', async (req, res) => {
+    try {
+      const validatedData = insertResourceLinkSchema.parse(req.body);
+      const resource = await storage.createResourceLink(validatedData);
+      res.status(201).json(resource);
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        return res.status(400).json({ message: 'Invalid resource data', errors: error.errors });
+      }
+      res.status(500).json({ message: 'Failed to add resource' });
     }
   });
 
