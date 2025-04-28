@@ -99,14 +99,13 @@ const LoadingResourceCard = () => (
 const ResourcesPage = () => {
   const [activeTab, setActiveTab] = useState<string>("philosophy");
   
-  const { data: resources, isLoading } = useQuery({ 
+  const { data: resources = [], isLoading } = useQuery<ResourceLink[]>({ 
     queryKey: ['/api/resources'],
     staleTime: 5 * 60 * 1000, // 5 minutes
   });
 
   // Filter resources by category
   const getResourcesByCategory = (category: string) => {
-    if (!resources) return [];
     return resources.filter((resource: ResourceLink) => resource.category === category);
   };
 

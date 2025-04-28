@@ -114,9 +114,12 @@ const Header = () => {
             <a href="#events" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Events
             </a>
-            <a href="#resources" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+            <Link href="/resources" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Resources
-            </a>
+            </Link>
+            <Link href="/students" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+              Students
+            </Link>
             <a href="#blog" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Blog
             </a>

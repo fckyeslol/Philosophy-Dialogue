@@ -49,7 +49,7 @@ import {
   PhoneIcon, 
   Loader2, 
   Calendar, 
-  Graduation, 
+  GraduationCap, 
   BookOpen 
 } from "lucide-react";
 import { apiRequest } from "@/lib/queryClient";
@@ -73,7 +73,7 @@ const StudentsPage = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [searchQuery, setSearchQuery] = useState("");
   
-  const { data: students = [], isLoading } = useQuery({ 
+  const { data: students = [], isLoading } = useQuery<Student[]>({ 
     queryKey: ['/api/students'],
     staleTime: 5 * 60 * 1000, // 5 minutes
   });
