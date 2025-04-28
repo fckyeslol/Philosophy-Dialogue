@@ -23,6 +23,19 @@ export const members = pgTable("members", {
   imageUrl: text("imageUrl"),
 });
 
+// Student model (for the repository)
+export const students = pgTable("students", {
+  id: serial("id").primaryKey(),
+  name: text("name").notNull(),
+  email: text("email").notNull().unique(),
+  phone: text("phone"),
+  graduationYear: text("graduation_year"),
+  major: text("major"),
+  interests: text("interests").array(), // Array of interests: "philosophy", "debate", "model-un"
+  joinDate: timestamp("join_date").notNull().defaultNow(),
+  isActive: boolean("is_active").notNull().default(true),
+});
+
 // Blog post model
 export const blogPosts = pgTable("blog_posts", {
   id: serial("id").primaryKey(),
@@ -51,6 +64,16 @@ export const contactMessages = pgTable("contact_messages", {
   subject: text("subject").notNull(),
   message: text("message").notNull(),
   createdAt: timestamp("created_at").notNull().defaultNow(),
+});
+
+// Resource link model
+export const resourceLinks = pgTable("resource_links", {
+  id: serial("id").primaryKey(),
+  title: text("title").notNull(),
+  url: text("url").notNull(),
+  description: text("description"),
+  category: text("category").notNull(), // "philosophy", "debate", or "model-un"
+  type: text("type").notNull(), // "article", "video", "document", "website"
 });
 
 // User model (from the existing schema)
@@ -105,6 +128,26 @@ export const insertContactMessageSchema = createInsertSchema(contactMessages).pi
   message: true,
 });
 
+// Schema for inserting students
+export const insertStudentSchema = createInsertSchema(students).pick({
+  name: true,
+  email: true,
+  phone: true,
+  graduationYear: true,
+  major: true,
+  interests: true,
+  isActive: true,
+});
+
+// Schema for inserting resource links
+export const insertResourceLinkSchema = createInsertSchema(resourceLinks).pick({
+  title: true,
+  url: true,
+  description: true,
+  category: true,
+  type: true,
+});
+
 // Schema for inserting users (from the existing schema)
 export const insertUserSchema = createInsertSchema(users).pick({
   username: true,
@@ -114,15 +157,19 @@ export const insertUserSchema = createInsertSchema(users).pick({
 // Types for insert operations
 export type InsertEvent = z.infer<typeof insertEventSchema>;
 export type InsertMember = z.infer<typeof insertMemberSchema>;
+export type InsertStudent = z.infer<typeof insertStudentSchema>;
 export type InsertBlogPost = z.infer<typeof insertBlogPostSchema>;
 export type InsertGalleryImage = z.infer<typeof insertGalleryImageSchema>;
 export type InsertContactMessage = z.infer<typeof insertContactMessageSchema>;
+export type InsertResourceLink = z.infer<typeof insertResourceLinkSchema>;
 export type InsertUser = z.infer<typeof insertUserSchema>;
 
 // Types for select operations
 export type Event = typeof events.$inferSelect;
 export type Member = typeof members.$inferSelect;
+export type Student = typeof students.$inferSelect;
 export type BlogPost = typeof blogPosts.$inferSelect;
 export type GalleryImage = typeof galleryImages.$inferSelect;
 export type ContactMessage = typeof contactMessages.$inferSelect;
+export type ResourceLink = typeof resourceLinks.$inferSelect;
 export type User = typeof users.$inferSelect;
