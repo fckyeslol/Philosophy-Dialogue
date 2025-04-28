@@ -637,10 +637,88 @@ export class DatabaseStorage implements IStorage {
   }
 }
 
+// Initialize sample student data for the repository
+const initializeSampleStudents = async (storage: MemStorage) => {
+  // Philosophy students
+  await storage.createStudent({
+    name: "Emma Lee",
+    email: "emma.lee@university.edu",
+    phone: "555-123-4567",
+    graduationYear: "2024",
+    major: "Philosophy",
+    interests: ["philosophy"],
+    isActive: true
+  });
+  
+  await storage.createStudent({
+    name: "James Wilson",
+    email: "jwilson@university.edu",
+    phone: "555-987-6543",
+    graduationYear: "2025",
+    major: "Philosophy and Political Science",
+    interests: ["philosophy", "debate"],
+    isActive: true
+  });
+
+  // Debate students
+  await storage.createStudent({
+    name: "Sofia Martinez",
+    email: "smartinez@university.edu",
+    phone: "555-456-7890",
+    graduationYear: "2023",
+    major: "Communications",
+    interests: ["debate"],
+    isActive: true
+  });
+  
+  await storage.createStudent({
+    name: "Liam Johnson",
+    email: "ljohnson@university.edu",
+    phone: "555-222-3333",
+    graduationYear: "2024",
+    major: "Political Science",
+    interests: ["debate", "model-un"],
+    isActive: true
+  });
+
+  // Model UN students
+  await storage.createStudent({
+    name: "Olivia Kim",
+    email: "okim@university.edu",
+    phone: "555-888-9999",
+    graduationYear: "2023",
+    major: "International Relations",
+    interests: ["model-un"],
+    isActive: true
+  });
+  
+  await storage.createStudent({
+    name: "Noah Patel",
+    email: "npatel@university.edu",
+    phone: "555-777-8888",
+    graduationYear: "2025",
+    major: "Economics and Global Studies",
+    interests: ["model-un", "philosophy"],
+    isActive: true
+  });
+  
+  // Alumni
+  await storage.createStudent({
+    name: "Isabella Garcia",
+    email: "igarcia@alumni.university.edu",
+    phone: "555-444-5555",
+    graduationYear: "2022",
+    major: "Philosophy",
+    interests: ["philosophy", "debate"],
+    isActive: false
+  });
+};
+
 // For development, we'll use in-memory storage
 // In production, this would be:
 // export const storage = new DatabaseStorage();
 export const storage = new MemStorage();
 
-// Initialize with sample resource links
+// Initialize with sample data
 initializeResourceLinks(storage as MemStorage).catch(console.error);
+initializeSampleStudents(storage as MemStorage).catch(console.error);
