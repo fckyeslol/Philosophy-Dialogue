@@ -408,57 +408,81 @@ const initializeResourceLinks = async (storage: MemStorage) => {
   await storage.createResourceLink({
     title: "Stanford Encyclopedia of Philosophy",
     url: "https://plato.stanford.edu/",
-    description: "An authoritative encyclopedia of philosophy with in-depth articles written by experts.",
+    description: "An authoritative encyclopedia of philosophy with in-depth articles written by experts, covering all areas of philosophy.",
     category: "philosophy",
     type: "website"
   });
   
   await storage.createResourceLink({
-    title: "History of Philosophy Without Any Gaps",
-    url: "https://historyofphilosophy.net/",
-    description: "Podcast series covering the entire history of philosophy from the Presocratics to the present day.",
+    title: "Philosophy Now",
+    url: "https://philosophynow.org/",
+    description: "A magazine for everyone interested in ideas. Contains articles on all aspects of Western philosophy, including contemporary issues.",
+    category: "philosophy",
+    type: "website"
+  });
+  
+  await storage.createResourceLink({
+    title: "The Partially Examined Life",
+    url: "https://partiallyexaminedlife.com/",
+    description: "A philosophy podcast by some guys who were at one point set on doing philosophy for a living but then thought better of it.",
     category: "philosophy",
     type: "podcast"
   });
   
   await storage.createResourceLink({
-    title: "The Ethics of Artificial Intelligence",
-    url: "https://www.youtube.com/watch?v=dRIw_FpjAkI",
-    description: "Lecture on ethical considerations in AI development and implementation.",
+    title: "Crash Course Philosophy",
+    url: "https://www.youtube.com/playlist?list=PL8dPuuaLjXtNgK6MZucdYldNkMybYIHKR",
+    description: "A beginner-friendly video series covering major philosophical concepts and figures throughout history.",
     category: "philosophy",
     type: "video"
   });
   
   // Debate resources
   await storage.createResourceLink({
-    title: "AREL Method - The Art of Argumentation",
-    url: "https://www.youtube.com/channel/UCzPnhlLRy_JkpNpP7Qx3rtw",
-    description: "Fernando Millares' series on the AREL method (Assertion, Reasoning, Evidence, Link) of argumentation.",
+    title: "AREL Method by Fernando Millares",
+    url: "https://www.youtube.com/watch?v=CJn_XJOVrCE",
+    description: "Comprehensive guide to the AREL method (Assertion, Reasoning, Evidence, Link) for structured argumentation in debates.",
     category: "debate",
     type: "video"
   });
   
   await storage.createResourceLink({
-    title: "British Parliamentary Debate Format Guide",
-    url: "https://idebate.org/sites/default/files/BP_Guide.pdf",
-    description: "Comprehensive guide to the British Parliamentary debate format used in collegiate competitions.",
+    title: "International Debate Education Association",
+    url: "https://idebate.org/",
+    description: "Resources for debate formats, argument construction, and global debate competitions.",
     category: "debate",
-    type: "document"
+    type: "website"
   });
   
   await storage.createResourceLink({
     title: "Logical Fallacies: The Complete List",
     url: "https://yourlogicalfallacyis.com/",
-    description: "Interactive guide to logical fallacies commonly found in debates.",
+    description: "Interactive guide to logical fallacies commonly found in debates with examples and explanations.",
     category: "debate",
     type: "website"
   });
   
+  await storage.createResourceLink({
+    title: "World Schools Debating Championships Guide",
+    url: "https://debate.uvm.edu/dcpdf/WSDC_Debating_Guide.pdf",
+    description: "Official guide to the World Schools Debating format with rules, examples, and strategies.",
+    category: "debate",
+    type: "document"
+  });
+  
   // Model UN resources
   await storage.createResourceLink({
-    title: "United Nations Documentation Guide",
-    url: "https://research.un.org/en/docs",
-    description: "Official guide to UN documentation, essential for MUN research and resolution writing.",
+    title: "United Nations Official Website",
+    url: "https://www.un.org/",
+    description: "Primary source for all UN-related research, resolutions, and international affairs information.",
+    category: "model-un",
+    type: "website"
+  });
+  
+  await storage.createResourceLink({
+    title: "Best Delegate Model UN Guide",
+    url: "https://bestdelegate.com/",
+    description: "Comprehensive resources for Model UN preparation, procedures, position papers, and resolution writing.",
     category: "model-un",
     type: "website"
   });
@@ -466,15 +490,15 @@ const initializeResourceLinks = async (storage: MemStorage) => {
   await storage.createResourceLink({
     title: "Rules of Procedure for Model UN",
     url: "https://www.nmun.org/assets/documents/NMUNRulesShort.pdf",
-    description: "Official rules of procedure used in National Model United Nations conferences.",
+    description: "Official rules of procedure used in National Model United Nations conferences with motions and voting procedures.",
     category: "model-un",
     type: "document"
   });
   
   await storage.createResourceLink({
-    title: "Resolution Writing Workshop",
-    url: "https://www.youtube.com/watch?v=KG0QnEXgf6I",
-    description: "Step-by-step tutorial on drafting effective UN resolutions in MUN conferences.",
+    title: "Model UN Parliamentary Procedure",
+    url: "https://www.youtube.com/watch?v=RlCpLJw4z0U",
+    description: "Detailed tutorial on parliamentary procedure, points, and motions in Model UN debates.",
     category: "model-un",
     type: "video"
   });
