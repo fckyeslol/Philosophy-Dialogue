@@ -439,8 +439,8 @@ const initializeResourceLinks = async (storage: MemStorage) => {
   
   // Debate resources
   await storage.createResourceLink({
-    title: "AREL Method by Fernando Millares",
-    url: "https://www.youtube.com/watch?v=CJn_XJOVrCE",
+    title: "Fernando Millares",
+    url: "https://youtube.com/@fermiralles?si=2u2tCzwp7vkCBGdU",
     description: "Comprehensive guide to the AREL method (Assertion, Reasoning, Evidence, Link) for structured argumentation in debates.",
     category: "debate",
     type: "video"
@@ -448,7 +448,7 @@ const initializeResourceLinks = async (storage: MemStorage) => {
   
   await storage.createResourceLink({
     title: "International Debate Education Association",
-    url: "https://idebate.org/",
+    url: "https://idebate.net/",
     description: "Resources for debate formats, argument construction, and global debate competitions.",
     category: "debate",
     type: "website"
@@ -456,7 +456,7 @@ const initializeResourceLinks = async (storage: MemStorage) => {
   
   await storage.createResourceLink({
     title: "Logical Fallacies: The Complete List",
-    url: "https://yourlogicalfallacyis.com/",
+    url: "https://www.uvu.edu/writingcenter/docs/logicalfallacies.pdf",
     description: "Interactive guide to logical fallacies commonly found in debates with examples and explanations.",
     category: "debate",
     type: "website"
@@ -464,7 +464,7 @@ const initializeResourceLinks = async (storage: MemStorage) => {
   
   await storage.createResourceLink({
     title: "World Schools Debating Championships Guide",
-    url: "https://debate.uvm.edu/dcpdf/WSDC_Debating_Guide.pdf",
+    url: "https://www.wsdcdebating.org/about-9",
     description: "Official guide to the World Schools Debating format with rules, examples, and strategies.",
     category: "debate",
     type: "document"
@@ -489,7 +489,7 @@ const initializeResourceLinks = async (storage: MemStorage) => {
   
   await storage.createResourceLink({
     title: "Rules of Procedure for Model UN",
-    url: "https://www.nmun.org/assets/documents/NMUNRulesShort.pdf",
+    url: "https://www.un.org/en/model-united-nations/rules-procedure-0",
     description: "Official rules of procedure used in National Model United Nations conferences with motions and voting procedures.",
     category: "model-un",
     type: "document"
@@ -497,7 +497,7 @@ const initializeResourceLinks = async (storage: MemStorage) => {
   
   await storage.createResourceLink({
     title: "Model UN Parliamentary Procedure",
-    url: "https://www.youtube.com/watch?v=RlCpLJw4z0U",
+    url: "https://www.youtube.com/watch?v=BYYwBLJ9q5E",
     description: "Detailed tutorial on parliamentary procedure, points, and motions in Model UN debates.",
     category: "model-un",
     type: "video"
