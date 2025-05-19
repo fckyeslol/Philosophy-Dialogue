@@ -236,7 +236,7 @@ const ResourcesPage = () => {
           Have a resource to suggest? Let us know through our contact form!
         </p>
         <Button asChild>
-          <a href="/contact">Contact Us</a>
+          <a href="/contact#contact?subject=resource">Suggest a Resource</a>
         </Button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -23,12 +23,28 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 
 const Contact = () => {
   const { toast } = useToast();
+  const [initialSubject, setInitialSubject] = useState("");
+  
+  // Check for URL parameters on component mount
+  useEffect(() => {
+    // Check if URL has subject parameter
+    const hashParams = window.location.hash.split('?');
+    if (hashParams.length > 1) {
+      const params = new URLSearchParams(hashParams[1]);
+      const subject = params.get('subject');
+      if (subject) {
+        setInitialSubject(subject);
+        form.setValue('subject', subject);
+      }
+    }
+  }, []);
+  
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
       email: "",
-      subject: "",
+      subject: initialSubject || "",
       message: "",
     },
   });
@@ -184,6 +200,7 @@ const Contact = () => {
                           <SelectItem value="debate">Debate Program</SelectItem>
                           <SelectItem value="model-un">Model UN Program</SelectItem>
                           <SelectItem value="membership">Membership Information</SelectItem>
+                          <SelectItem value="resource">Suggest a Resource</SelectItem>
                         </SelectContent>
                       </Select>
                       <FormMessage />
