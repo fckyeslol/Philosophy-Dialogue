@@ -59,9 +59,9 @@ const Header = () => {
           
           {/* Desktop navigation */}
           <nav className="hidden md:flex space-x-10" aria-label="Main navigation">
-            <a href="#about" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+            <Link href="/#about" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               About
-            </a>
+            </Link>
             
             <DropdownMenu>
               <DropdownMenuTrigger className="group inline-flex items-center font-accent text-base font-medium text-neutral-600 hover:text-primary focus:outline-none">
@@ -69,7 +69,7 @@ const Header = () => {
                 <ChevronDown className="ml-1 h-4 w-4 group-hover:text-primary" />
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56 rounded-lg p-2">
-                <a href="#philosophy">
+                <Link href="/#philosophy">
                   <DropdownMenuItem className="flex items-start p-3 rounded-lg cursor-pointer">
                     <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-primary text-white">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -81,8 +81,8 @@ const Header = () => {
                       <p className="mt-1 text-sm text-neutral-500">Explore profound ideas and concepts through philosophical inquiry.</p>
                     </div>
                   </DropdownMenuItem>
-                </a>
-                <a href="#debate">
+                </Link>
+                <Link href="/#debate">
                   <DropdownMenuItem className="flex items-start p-3 rounded-lg cursor-pointer">
                     <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-secondary text-white">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -94,8 +94,8 @@ const Header = () => {
                       <p className="mt-1 text-sm text-neutral-500">Engage in structured arguments and develop critical thinking skills.</p>
                     </div>
                   </DropdownMenuItem>
-                </a>
-                <a href="#model-un">
+                </Link>
+                <Link href="/#model-un">
                   <DropdownMenuItem className="flex items-start p-3 rounded-lg cursor-pointer">
                     <div className="flex-shrink-0 flex items-center justify-center h-10 w-10 rounded-md bg-accent text-white">
                       <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -107,25 +107,25 @@ const Header = () => {
                       <p className="mt-1 text-sm text-neutral-500">Simulate United Nations committees and international relations.</p>
                     </div>
                   </DropdownMenuItem>
-                </a>
+                </Link>
               </DropdownMenuContent>
             </DropdownMenu>
             
-            <a href="#events" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+            <Link href="/#events" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Events
-            </a>
+            </Link>
             <Link href="/resources" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Resources
             </Link>
             <Link href="/students" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Students
             </Link>
-            <a href="#blog" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+            <Link href="/#blog" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Blog
-            </a>
-            <a href="#gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+            </Link>
+            <Link href="/#gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Gallery
-            </a>
+            </Link>
           </nav>
           
           {/* Right side buttons */}
