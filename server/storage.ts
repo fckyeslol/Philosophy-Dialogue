@@ -136,7 +136,7 @@ export class MemStorage implements IStorage {
       role: "Club Co-President: Founder",
       bio: "Lover of philosophy. Has participated in one national philosophy competition and different local and regional events.",
       focus: "Philosophy, critical thinking",
-      imageUrl: "https://replit.com/@mateopirela08/PhilosophyDialogue#https:/images.unsplash.com/Photo%20Mateo.png"
+      imageUrl: "https://imgur.com/myxDi4E"
     });
     
     this.createMember({
@@ -144,15 +144,15 @@ export class MemStorage implements IStorage {
       role: "Club Director",
       bio: "Professor of Philosophy and founder of the club initiative",
       focus: "expert in philosophy and debate",
-      imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      imageUrl: "https://imgur.com/uOn6Q3w"
     });
     
     this.createMember({
       name: "Daniela Rodriguez",
-      role: "",
-      bio: "",
-      focus: "Debate and Model UN",
-      imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      role: "Club Co-president",
+      bio: "loves debate, committed to social causes",
+      focus: "Debate and social skills",
+      imageUrl: "https://imgur.com/D8yYuNv"
     });
     
     // Sample blog posts
