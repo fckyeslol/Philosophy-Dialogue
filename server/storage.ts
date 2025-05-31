@@ -132,26 +132,26 @@ export class MemStorage implements IStorage {
     
     // Sample members
     this.createMember({
-      name: "Sarah Johnson",
-      role: "Club President, Philosophy Focus",
-      bio: "Philosophy major with a focus on ethics and political philosophy. Has participated in three national debate competitions.",
-      focus: "Philosophy",
-      imageUrl: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      name: "Mateo Pirela Pulido",
+      role: "Club Co-President: Founder",
+      bio: "Lover of philosophy. Has participated in one national philosophy competition and different local and regional events.",
+      focus: "Philosophy, critical thinking",
+      imageUrl: "https://replit.com/@mateopirela08/PhilosophyDialogue#https:/images.unsplash.com/Photo%20Mateo.png"
     });
     
     this.createMember({
-      name: "David Chen",
-      role: "Debate Team Captain",
-      bio: "Political Science and Economics double major. Award-winning debater with expertise in parliamentary debate format.",
-      focus: "Debate",
+      name: "Juan Carlos Gonzalez",
+      role: "Club Director",
+      bio: "Professor of Philosophy and founder of the club initiative",
+      focus: "expert in philosophy and debate",
       imageUrl: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
     });
     
     this.createMember({
-      name: "Maya Patel",
-      role: "Model UN Coordinator",
-      bio: "International Relations major with a minor in Environmental Studies. Has attended MUN conferences across the country.",
-      focus: "Model UN",
+      name: "Daniela Rodriguez",
+      role: "",
+      bio: "",
+      focus: "Debate and Model UN",
       imageUrl: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
     });
     
