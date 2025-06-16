@@ -209,39 +209,33 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
     });
 
     this.createGalleryImage({
-      title: "International MUN",
+      title: "Philosophy Discussion",
       date: "Winter 2023",
-      imageUrl: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      imageUrl: "/images/antropoceno.webp"
     });
 
     this.createGalleryImage({
-      title: "Annual Social Gathering",
+      title: "Diogenes Study",
       date: "Summer 2023",
-      imageUrl: "https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      imageUrl: "/images/diogenes.gif"
     });
 
     this.createGalleryImage({
-      title: "Philosophy Café",
+      title: "Team Meeting",
       date: "Spring 2023",
-      imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      imageUrl: "/images/mateo.png"
     });
 
     this.createGalleryImage({
-      title: "National Awards Ceremony",
+      title: "Faculty Advisor",
       date: "Winter 2022",
-      imageUrl: "https://images.unsplash.com/photo-1544531585-9847b68c8c86?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      imageUrl: "/images/juan.png"
     });
 
     this.createGalleryImage({
-      title: "Debate Skills Workshop",
+      title: "Club Leadership",
       date: "Fall 2022",
-      imageUrl: "https://images.unsplash.com/photo-1557804506-669a67965ba0?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
-    });
-
-    this.createGalleryImage({
-      title: "Model UN Preparation",
-      date: "Fall 2023",
-      imageUrl: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      imageUrl: "/images/daniela.png"
     });
   }
 
