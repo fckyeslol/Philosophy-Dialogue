@@ -197,15 +197,15 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
 
     // Sample gallery images
     this.createGalleryImage({
-      title: "Regional Debate Finals",
-      date: "Spring 2023",
-      imageUrl: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      title: "Marcemun",
+      date: "2025",
+      imageUrl: "/images/marcemun.png"
     });
 
     this.createGalleryImage({
       title: "AISMUN",
       date: "2025",
-      imageUrl: "https://replit.com/@mateopirela08/PhilosophyDialogue#https:/images.unsplash.com/aismun.png"
+      imageUrl: "/images/aismun.png"
     });
 
     this.createGalleryImage({
