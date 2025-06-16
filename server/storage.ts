@@ -130,59 +130,34 @@ export class MemStorage implements IStorage {
     // Sample blog posts
     this.createBlogPost({
       title: "Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.",
-      content: `La Revolución Industrial, iniciada en el siglo XVIII, marcó un punto de inflexión en la historia de la humanidad que trasciende lo meramente tecnológico para adentrarse en una transformación profunda de nuestra relación con el planeta. Este período no solo revolucionó los modos de producción, sino que sentó las bases de lo que hoy conocemos como Antropoceno: una nueva época geológica caracterizada por el impacto dominante de la actividad humana sobre los sistemas terrestres.
+      content: `Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.
+En la actualidad, las problemáticas ambientales se encuentran intrínsecamente relacionadas con los avances tecnológicos que datan en la revolución industrial, desde 1780 hasta 1850, los cuales han determinado una crisis que permea en la preocupación de los gobiernos y los activistas ambientales, cuyos planteamientos derivan discusiones de suma relevancia tanto en el marco político, como en las perspectivas sociales que promueven la concientización de las acciones humanas frente a este fenómeno. En el presente texto, se establece la problemática central del antropoceno para exponer dos argumentos que se sustentan desde fuentes académicas.
+El concepto clave denominado Antropoceno constituye una época geológica caracterizada por la dominancia del impacto humano sobre el planeta, que según Cuomo. (2017) se refiere “al hecho de que los seres humanos (anthropos) influyen, como nunca antes en la historia, en los diferentes sistemas existentes en la Tierra, así como en otras especies. Esto produce cambios impredecibles y perdurables” (p.4). La relación de Cuomo con la revolución industrial del siglo XVIII hace pensar que, la utilización de maquinarias para la realización de los trabajos crea una demanda insaciable de recursos energéticos, que para esta época solo se podía realizar con la extracción de energía fósil, la que proviene de la quema de combustibles como el carbón y el petróleo, este procedimiento genera los llamados gases de efecto invernadero, como lo son el dióxido de carbono y el metano que actúan como una manta que recubre la tierra, y retiene el calor solar, el cual produce el aumento de las temperaturas. 
+Desde la perspectiva personal, plantear la problemática permite en primera instancia, citar a Santayana. (1905). "Los que no pueden recordar el pasado están condenados a repetirlo"(p.44). Lo cual significa, que como pensaba Michel Foucault, Karl Marx, diversos sociólogos y economistas, el entendimiento de la historia, y los hechos que la marcaron es fundamental para la comprensión de las problemáticas contemporáneas y el enfrentamiento de estas mismas. Por lo tanto, ubicarse desde el análisis histórico en el desarrollo de la problemática ambiental actual, en comparación con los avances industriales y tecnológicos determina que los efectos de la revolución industrial influyen negativamente en la producción de gases de efecto invernadero, debido, a la aparición de las maquinarias industriales y el interés empresarial por el uso desmedido de recursos naturales.
+En primer lugar, la aparición de las maquinarias industriales que nacen debido a la abismal demanda de energía presentada como consecuencia de la revolución industrial y el nuevo sistema económico inciden negativamente, así como lo señala Serratos (2021) Plantea que necesitamos cambiar el sistema económico, que nos vende la idea de que es necesario destruir la naturaleza para obtener un bienestar.  Al respecto conviene decir que según la Organización de las Naciones Unidas (ONU), en el informe del Intergovernmental Panel on Climate Change (IPCC, 2021) el ser humano es responsable del calentamiento global de los últimos 200 años, donde se puede ver que la temperatura media de la tierra es 1,1ºC más elevada que a finales del siglo XIX. Ahora bien, paralelamente al incremento masivo de la producción de gases de efecto invernadero, se ha registrado, un hecho histórico que marcó un punto de inflexión en la producción de estos nocivos gases, que es la hegemonización mundial del sistema capitalista.
+ A pesar de que se están creando nuevos mecanismos para la sustentación de las necesidades energéticas, como son las energías limpias y renovables, se está pasando por alto la raíz de la problemática, en la que encontramos como consecuencia, no solo la demanda excesiva de energía, sino en general de los recursos naturales, que se explotan de manera salvaje en aquellos países que cuentan con estos. 
+Según los datos publicados en la revista científica The Lancet, del informe internacional presentado por La Universidad Autónoma de Barcelona, desde 1970 hasta 2017 Estados Unidos representa el 27% de uso excesivo de materiales en el mundo, seguido de este la UE con un 25% (incluyendo a Reino Unido). Para que se pueda comprender lo preocupante de estas cifras, hay que tener en cuenta que se han extraído en total 2.500 millones de toneladas de recursos naturales en todo el planeta, ahora bien más de la mitad del uso de estos recursos recae, en los estados mencionados con anterioridad. Y, que al sumar los indicadores de todos los países del sur global, o  sea América Latina, Caribe, África, Medio Oriente y gran parte de Asia, únicamente representan el 8% de uso excesivo de estos materiales.
+Al respecto se señala que la razón principal por la que existe este desfase entre Estados Unidos y un gran número de países, en la utilización de recursos naturales, a priori, es debido al modelo capitalista donde la propiedad privada y el supuesto libre mercado son el eje de la economía, en el cual es necesaria la extracción masiva de los recursos para poder cumplir con el ideal planteado en este sistema, que es el crecimiento exponencial e infinito de la economía, pero que no prevalece el medio ambiente en la ecuación de crecimiento exponencial económico, ya que, aunque exista la posibilidad de crecer la economía de manera infinita, los recursos naturales con los que contamos son limitados.
+	Retomando la tesis planteada en este escrito con los argumentos desarrollados, este ensayo no pretende agotar la discusión ni mucho menos suministrar una respuesta absoluta, pero al tiempo nos posiciona ante la necesidad imperativa de mantener abierta la reflexión filosófica desde la permanente interrogación para identificar la relación entre la crisis ambiental, la aparición de las maquinarias industriales y el interés empresarial por el uso desmedido de recursos naturales, con el objetivo de proponer un camino que lleve a la solución de la situación problema con el propósito de reestructurar el sistema político y socioeconómico, dando como manifiesto la necesidad de mantener la reflexión filosófica alrededor de la pregunta como la luz que ilumine el sendero a transitar en el Antropoceno.
+	Para finalizar se plantean unas interrogantes que permitirán la reflexión con respecto a la problemática tratada en este ensayo:
+¿Por qué se debe promover la concientización ambiental?
+¿Cuáles son las medidas inmediatas que se deben de tomar por parte del ciudadano promedio para enfrentar la crisis climática?
+¿Cómo se puede contribuir desde el seno del hogar y familiar a la concientización de la problemática ambiental?
 
-**El Surgimiento de una Nueva Era**
+Referencias
 
-El término Antropoceno, propuesto por Paul Crutzen en el año 2000, describe una época en la que los seres humanos se han convertido en la fuerza geológica más significativa del planeta. Aunque su inicio exacto sigue siendo debatido, muchos científicos sitúan su comienzo en la Revolución Industrial, momento en que la humanidad comenzó a alterar sistemáticamente la composición atmosférica mediante la quema masiva de combustibles fósiles.
-
-La máquina de vapor de James Watt, perfeccionada en 1769, simboliza más que un avance tecnológico: representa el momento en que la humanidad comenzó a acelerar su metabolismo energético de manera exponencial. Esta aceleración no fue meramente cuantitativa, sino que implicó un cambio cualitativo en la naturaleza de nuestra especie como agente geológico.
-
-**Las Dimensiones del Cambio**
-
-Los efectos de la Revolución Industrial sobre el sistema terrestre son múltiples y interconectados:
-
-*Dimensión Atmosférica:* La concentración de CO₂ en la atmósfera ha aumentado de aproximadamente 280 ppm en la era preindustrial a más de 410 ppm en la actualidad. Este cambio, aparentemente modesto en términos numéricos, representa una alteración fundamental del equilibrio climático que había prevalecido durante los últimos 10,000 años.
-
-*Dimensión Biológica:* La industrialización ha acelerado lo que algunos científicos denominan la "Sexta Extinción Masiva". La pérdida de biodiversidad actual supera entre 100 y 1,000 veces las tasas naturales de extinción, alterando irreversiblemente la red de la vida en la Tierra.
-
-*Dimensión Geoquímica:* Los ciclos biogeoquímicos del nitrógeno y fósforo han sido perturbados por la agricultura industrial y la síntesis química, alterando ecosistemas tanto terrestres como acuáticos a escala global.
-
-**Reflexiones Filosóficas sobre el Progreso**
-
-Desde una perspectiva filosófica, el Antropoceno nos confronta con preguntas fundamentales sobre la naturaleza del progreso humano. La narrativa tradicional del progreso, heredada de la Ilustración y consolidada durante la Revolución Industrial, sostenía que el dominio tecnológico sobre la naturaleza conduciría inevitablemente al bienestar humano.
-
-Sin embargo, el Antropoceno revela las limitaciones y contradicciones de esta concepción. Como observa el filósofo Bruno Latour, nos encontramos en una situación paradójica: hemos adquirido un poder geológico sin precedentes, pero carecemos de las instituciones políticas y marcos conceptuales necesarios para ejercerlo responsablemente.
-
-**El Desafío de la Responsabilidad**
-
-El reconocimiento del Antropoceno plantea cuestiones éticas complejas sobre la responsabilidad intergeneracional y la justicia global. Los efectos de la Revolución Industrial no se distribuyeron equitativamente: mientras que los países industrializados concentraron los beneficios del desarrollo tecnológico, las consecuencias ambientales afectan desproporcionalmente a las poblaciones más vulnerables del planeta.
-
-Esta asimetría nos obliga a repensar conceptos fundamentales como justicia, soberanía y desarrollo. ¿Cómo podemos conciliar las aspiraciones legítimas de desarrollo de las naciones emergentes con la necesidad urgente de limitar las emisiones globales? ¿Qué obligaciones morales tenemos hacia las generaciones futuras que heredarán un planeta transformado por nuestras decisiones?
-
-**Hacia una Nueva Relación con la Tecnología**
-
-El Antropoceno no debe interpretarse como una condena de la tecnología, sino como una invitación a desarrollar una relación más reflexiva y responsable con ella. La misma capacidad innovadora que caracterizó la Revolución Industrial debe ser canalizada hacia la creación de tecnologías que trabajen en armonía con los sistemas naturales.
-
-Las energías renovables, la economía circular, la biotecnología sostenible y la geoingeniería representan intentos de desarrollar lo que podríamos llamar "tecnologías del Antropoceno": innovaciones conscientes de su inserción en sistemas terrestres complejos y diseñadas para minimizar su impacto disruptivo.
-
-**Conclusión: Aprendiendo a Habitar el Antropoceno**
-
-La Revolución Industrial nos legó tanto las herramientas para transformar el mundo como la responsabilidad de hacerlo sabiamente. El Antropoceno no es simplemente una crisis que debemos resolver, sino una nueva condición existencial que debemos aprender a habitar.
-
-Esta transición requiere no solo innovaciones tecnológicas, sino una transformación profunda de nuestras formas de pensar, valorar y organizarnos como especie. Necesitamos desarrollar lo que podríamos llamar una "sabiduría antropocénica": la capacidad de actuar conscientemente como fuerza geológica, asumiendo la responsabilidad de ser los primeros seres vivos en la historia del planeta capaces de influir deliberadamente en su propia evolución.
-
-El futuro del Antropoceno no está predeterminado. Como herederos de la Revolución Industrial, tenemos tanto las capacidades como la responsabilidad de dirigir esta nueva época hacia formas más justas y sostenibles de coexistencia con el sistema terrestre que nos sostiene.
-
-En última instancia, el Antropoceno nos desafía a realizar una segunda revolución, tan profunda como la primera: la transición de ser una fuerza geológica inconsciente a convertirnos en guardianes reflexivos del planeta que habitamos.`,
+Cuomo, C. (2017). Against the Idea of an Anthropocene Epoch: Ethical, Political and Scientific Concerns. Biogeosystem Technique, 4(1), 4–8.   https://doi.org/10.13187/bgt.2017.1.4	
+Serratos, F. (2020). El capitaloceno.  Universidad Nacional Autónoma de México
+United Nations [UN]. (s/f). ¿Qué es el cambio climático? | Naciones Unidas., de https://www.un.org/es/climatechange/what-is-climate-change
+Hickel, J., O’Neill, D. W., Fanning, A. L., & Zoomkawala, H. (2022). National responsibility for ecological breakdown: a fair-shares assessment of resource use, 1970–2017. The Lancet. Planetary Health, 6(4), e342–e349. https://doi.org/10.1016/S2542-5196(22)00044-4`,
       excerpt: "Explorando los conceptos clave que caracterizan el antropoceno.",
       category: "filosofia",
-      date: "10 abril, 2025",
+      date: "10 abril, 2024",
       imageUrl: "/images/antropoceno.webp"
     });
 
     this.createBlogPost({
-      title: "Climate Change Diplomacy",
+      title: "La pesadilla moderna",
       content: "Full content of the article...",
       excerpt: "Analyzing the effectiveness of international cooperation on climate change and the challenges faced in the UN Climate Change Conference.",
       category: "model-un",
@@ -192,7 +167,7 @@ En última instancia, el Antropoceno nos desafía a realizar una segunda revoluc
     });
 
     this.createBlogPost({
-      title: "The Art of Refutation",
+      title: "asdasd",
       content: "Full content of the article...",
       excerpt: "A comprehensive guide to effectively countering arguments in competitive debate, with techniques for identifying logical fallacies.",
       category: "debate",
@@ -209,9 +184,9 @@ En última instancia, el Antropoceno nos desafía a realizar una segunda revoluc
     });
 
     this.createGalleryImage({
-      title: "Guest Lecture Series",
-      date: "Fall 2022",
-      imageUrl: "https://images.unsplash.com/photo-1523240795612-9a054b0db644?ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=80"
+      title: "AISMUN",
+      date: "2025",
+      imageUrl: "https://replit.com/@mateopirela08/PhilosophyDialogue#https:/images.unsplash.com/aismun.png"
     });
 
     this.createGalleryImage({
