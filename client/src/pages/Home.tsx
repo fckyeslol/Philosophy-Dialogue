@@ -4,8 +4,6 @@ import Activities from "@/components/sections/Activities";
 import Resources from "@/components/sections/Resources";
 import Members from "@/components/sections/Members";
 import MyEssays from "@/components/sections/MyEssays";
-import ResearchPapers from "@/components/sections/ResearchPapers";
-import AcademicArticles from "@/components/sections/AcademicArticles";
 import Blog from "@/components/sections/Blog";
 import Gallery from "@/components/sections/Gallery";
 import Contact from "@/components/sections/Contact";
@@ -33,8 +31,6 @@ const Home = () => {
       <Resources />
       <Members members={members} />
       <MyEssays />
-      <ResearchPapers />
-      <AcademicArticles />
       <Blog posts={blogPosts} />
       <Gallery images={galleryImages} />
       <Contact />
