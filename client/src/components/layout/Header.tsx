@@ -111,9 +111,6 @@ const Header = () => {
               </DropdownMenuContent>
             </DropdownMenu>
             
-            <Link href="/#events" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
-              Events
-            </Link>
             <Link href="/resources" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Resources
             </Link>
