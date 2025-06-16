@@ -209,15 +209,15 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
     });
 
     this.createGalleryImage({
-      title: "Philosophy Discussion",
-      date: "Winter 2023",
-      imageUrl: "/images/antropoceno.webp"
+      title: "Marcemun premios",
+      date: "2025",
+      imageUrl: "/images/marcemun-premios.png"
     });
 
     this.createGalleryImage({
-      title: "Diogenes Study",
-      date: "Summer 2023",
-      imageUrl: "/images/diogenes.gif"
+      title: "AISMUN Comission",
+      date: "2025",
+      imageUrl: "/images/aismun-todos.png"
     });
 
     this.createGalleryImage({
