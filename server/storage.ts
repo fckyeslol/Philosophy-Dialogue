@@ -183,17 +183,16 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
       date: "10 abril, 2024",
       imageUrl: "/images/diogenes.gif"
     });
-  
 
     this.createBlogPost({
-      title: "asdasd",
-      content: "Full content of the article...",
-      excerpt: "A comprehensive guide to effectively countering arguments in competitive debate, with techniques for identifying logical fallacies.",
-      category: "debate",
-      date: "Sep 15, 2023",
-      authorId: 2,
-      imageUrl: "https://images.unsplash.com/photo-1576867757603-05b134ebc379?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      title: "Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.",
+      content: `Rsssssssss`,
+      excerpt: "Explorando los conceptos clave que caracterizan el antropoceno.",
+      category: "filosofia",
+      date: "10 abril, 2024",
+      imageUrl: "/images/antropoceno.webp"
     });
+  
 
     // Sample gallery images
     this.createGalleryImage({
