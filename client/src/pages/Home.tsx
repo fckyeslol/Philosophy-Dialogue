@@ -3,6 +3,7 @@ import About from "@/components/sections/About";
 import Activities from "@/components/sections/Activities";
 import Resources from "@/components/sections/Resources";
 import Members from "@/components/sections/Members";
+import MyEssays from "@/components/sections/MyEssays";
 import Blog from "@/components/sections/Blog";
 import Gallery from "@/components/sections/Gallery";
 import Contact from "@/components/sections/Contact";
@@ -29,6 +30,7 @@ const Home = () => {
       <Activities />
       <Resources />
       <Members members={members} />
+      <MyEssays />
       <Blog posts={blogPosts} />
       <Gallery images={galleryImages} />
       <Contact />
