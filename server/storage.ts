@@ -129,7 +129,7 @@ export class MemStorage implements IStorage {
 
     // Sample blog posts
     this.createBlogPost({
-      title: "Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.",
+      title: "Revolución Industrial y Antropoceno",
       content: `Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.
 En la actualidad, las problemáticas ambientales se encuentran intrínsecamente relacionadas con los avances tecnológicos que datan en la revolución industrial, desde 1780 hasta 1850, los cuales han determinado una crisis que permea en la preocupación de los gobiernos y los activistas ambientales, cuyos planteamientos derivan discusiones de suma relevancia tanto en el marco político, como en las perspectivas sociales que promueven la concientización de las acciones humanas frente a este fenómeno. En el presente texto, se establece la problemática central del antropoceno para exponer dos argumentos que se sustentan desde fuentes académicas.
 El concepto clave denominado Antropoceno constituye una época geológica caracterizada por la dominancia del impacto humano sobre el planeta, que según Cuomo. (2017) se refiere “al hecho de que los seres humanos (anthropos) influyen, como nunca antes en la historia, en los diferentes sistemas existentes en la Tierra, así como en otras especies. Esto produce cambios impredecibles y perdurables” (p.4). La relación de Cuomo con la revolución industrial del siglo XVIII hace pensar que, la utilización de maquinarias para la realización de los trabajos crea una demanda insaciable de recursos energéticos, que para esta época solo se podía realizar con la extracción de energía fósil, la que proviene de la quema de combustibles como el carbón y el petróleo, este procedimiento genera los llamados gases de efecto invernadero, como lo son el dióxido de carbono y el metano que actúan como una manta que recubre la tierra, y retiene el calor solar, el cual produce el aumento de las temperaturas. 
@@ -154,6 +154,44 @@ Hickel, J., O’Neill, D. W., Fanning, A. L., & Zoomkawala, H. (2022). National 
       category: "filosofia",
       date: "10 abril, 2024",
       imageUrl: "/images/antropoceno.webp"
+    });
+
+    // Research Papers
+    this.createBlogPost({
+      title: "The Ethics of Artificial Intelligence",
+      content: "Add your research paper content here...",
+      excerpt: "A comprehensive analysis of ethical implications in AI development.",
+      category: "research",
+      date: "15 mayo, 2025",
+      imageUrl: ""
+    });
+
+    this.createBlogPost({
+      title: "Democratic Participation in Digital Age",
+      content: "Add your research paper content here...",
+      excerpt: "Exploring how digital technologies impact democratic processes.",
+      category: "research", 
+      date: "20 mayo, 2025",
+      imageUrl: ""
+    });
+
+    // Academic Articles
+    this.createBlogPost({
+      title: "Climate Change and Political Action",
+      content: "Add your academic article content here...",
+      excerpt: "An examination of political responses to climate challenges.",
+      category: "academic",
+      date: "25 mayo, 2025",
+      imageUrl: ""
+    });
+
+    this.createBlogPost({
+      title: "Philosophy of Education in Modern Society",
+      content: "Add your academic article content here...",
+      excerpt: "Analyzing contemporary educational philosophy and its applications.",
+      category: "academic",
+      date: "30 mayo, 2025", 
+      imageUrl: ""
     });
 
     this.createBlogPost({
