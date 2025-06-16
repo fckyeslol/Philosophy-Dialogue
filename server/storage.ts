@@ -134,7 +134,7 @@ export class MemStorage implements IStorage {
     this.createMember({
       name: "Mateo Pirela Pulido",
       role: "Club Co-President: Founder",
-      bio: "Lover of philosophy. Has participated in one national philosophy competition and different local and regional events.",
+      bio: "Lover of philosophy. Has participated in one national philosophy competition.",
       focus: "Philosophy, critical thinking",
       imageUrl: "/images/mateo.png"
     });
@@ -157,13 +157,12 @@ export class MemStorage implements IStorage {
     
     // Sample blog posts
     this.createBlogPost({
-      title: "The Ethics of Artificial Intelligence",
-      content: "Full content of the article...",
-      excerpt: "Exploring the moral implications of AI development and the philosophical questions raised by machine consciousness and decision-making.",
-      category: "philosophy",
-      date: "Oct 5, 2023",
-      authorId: 1,
-      imageUrl: "https://images.unsplash.com/photo-1506126613408-eca07ce68773?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+      title: "Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.",
+      content: "",
+      excerpt: "Explorando los conceptos clave que caracterizan el antropoceno.",
+      category: "filosofia",
+      date: "10 abril, 2025",
+      imageUrl: "/images/antropoceno.png"
     });
     
     this.createBlogPost({
