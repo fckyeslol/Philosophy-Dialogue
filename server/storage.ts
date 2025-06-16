@@ -181,7 +181,7 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
       excerpt: "Una reflexión filosófica a través de los ojos de Diógenes de Sinope.",
       category: "filosofia",
       date: "10 abril, 2024",
-      imageUrl: "https:/images.unsplash.com/diogenes.gif"
+      imageUrl: "/images/diogenes.gif"
     });
   
 

@@ -41,10 +41,12 @@ const Gallery = ({ images }: GalleryProps) => {
         </div>
         
         <div className="mt-12 text-center">
-          <Button variant="link" className="text-primary hover:text-primary-dark">
-            View Full Gallery
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
+          <a href="/gallery">
+            <Button variant="link" className="text-primary hover:text-primary-dark">
+              View Full Gallery
+              <ArrowRight className="ml-2 h-4 w-4" />
+            </Button>
+          </a>
         </div>
       </div>
     </section>

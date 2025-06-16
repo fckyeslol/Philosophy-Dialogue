@@ -114,6 +114,9 @@ const Header = () => {
             <Link href="/resources" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Resources
             </Link>
+            <Link href="/gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+              Gallery
+            </Link>
             <Link href="/students" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Students
             </Link>
