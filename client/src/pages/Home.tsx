@@ -1,7 +1,6 @@
 import Hero from "@/components/sections/Hero";
 import About from "@/components/sections/About";
 import Activities from "@/components/sections/Activities";
-import Events from "@/components/sections/Events";
 import Resources from "@/components/sections/Resources";
 import Members from "@/components/sections/Members";
 import Blog from "@/components/sections/Blog";
@@ -11,10 +10,6 @@ import { useQuery } from "@tanstack/react-query";
 import { Event, Member, BlogPost, GalleryImage } from "@shared/schema";
 
 const Home = () => {
-  const { data: events = [] } = useQuery<Event[]>({
-    queryKey: ['/api/events'],
-  });
-
   const { data: members = [] } = useQuery<Member[]>({
     queryKey: ['/api/members'],
   });
@@ -32,7 +27,6 @@ const Home = () => {
       <Hero />
       <About />
       <Activities />
-      <Events events={events} />
       <Resources />
       <Members members={members} />
       <Blog posts={blogPosts} />
