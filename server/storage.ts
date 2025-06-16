@@ -221,21 +221,15 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
     });
 
     this.createGalleryImage({
-      title: "Team Meeting",
-      date: "Spring 2023",
-      imageUrl: "/images/mateo.png"
+      title: "Philosophy Discussion",
+      date: "2024",
+      imageUrl: "/images/antropoceno.webp"
     });
 
     this.createGalleryImage({
-      title: "Faculty Advisor",
-      date: "Winter 2022",
-      imageUrl: "/images/juan.png"
-    });
-
-    this.createGalleryImage({
-      title: "Club Leadership",
-      date: "Fall 2022",
-      imageUrl: "/images/daniela.png"
+      title: "Diogenes Study",
+      date: "2024",
+      imageUrl: "/images/diogenes.gif"
     });
   }
 
