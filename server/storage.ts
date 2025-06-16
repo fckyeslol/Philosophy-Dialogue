@@ -102,34 +102,6 @@ export class MemStorage implements IStorage {
   
   // Initialize with sample data for development
   private initializeSampleData() {
-    // Sample events
-    this.createEvent({
-      title: "Ethics in the Digital Age",
-      description: "A discussion on ethical implications of emerging technologies, privacy concerns, and digital rights.",
-      date: "Oct 15, 2023",
-      time: "5:00 PM - 7:00 PM",
-      location: "Main Campus, Building A, Room 203",
-      category: "philosophy"
-    });
-    
-    this.createEvent({
-      title: "Parliamentary Debate Tournament",
-      description: "Regional tournament featuring teams from neighboring universities. Open to all experience levels.",
-      date: "Oct 22, 2023",
-      time: "9:00 AM - 6:00 PM",
-      location: "Student Center, Conference Rooms A-D",
-      category: "debate"
-    });
-    
-    this.createEvent({
-      title: "Northeast Regional Model UN",
-      description: "Three-day conference simulating various UN committees addressing global challenges.",
-      date: "Nov 5-7, 2023",
-      time: "All Day Event",
-      location: "Metropolitan Convention Center",
-      category: "model-un"
-    });
-    
     // Sample members
     this.createMember({
       name: "Mateo Pirela Pulido",
@@ -162,7 +134,7 @@ export class MemStorage implements IStorage {
       excerpt: "Explorando los conceptos clave que caracterizan el antropoceno.",
       category: "filosofia",
       date: "10 abril, 2025",
-      imageUrl: "/images/antropoceno.png"
+      imageUrl: "/images/antropoceno.webp"
     });
     
     this.createBlogPost({
