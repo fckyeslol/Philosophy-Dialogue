@@ -10,7 +10,7 @@ const About = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div>
             <img 
-              src="https://images.unsplash.com/photo-1529070538774-1843cb3265df?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+              src="/images/your-image-name.png" 
               alt="Students engaged in philosophical discussion" 
               className="rounded-lg shadow-lg w-full"
             />
