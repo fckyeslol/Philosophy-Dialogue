@@ -96,8 +96,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-lg">Location</h4>
                   <p className="text-neutral-300">
-                    Student Union Building, Room 302<br />
-                    University Campus, 123 College St
+                    Social talent salon<br />
+                   
                   </p>
                 </div>
               </div>
@@ -107,7 +107,9 @@ const Contact = () => {
                 </div>
                 <div>
                   <h4 className="font-medium text-lg">Email</h4>
-                  <p className="text-neutral-300">pdmclub@university.edu</p>
+                  <p className="text-neutral-300">
+                    
+                    mateopirela08@gmail.com</p>
                 </div>
               </div>
               <div className="flex items-start">
@@ -117,9 +119,8 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-lg">Meeting Times</h4>
                   <p className="text-neutral-300">
-                    Philosophy: Tuesdays, 5:00 PM - 7:00 PM<br />
-                    Debate: Wednesdays, 6:00 PM - 8:00 PM<br />
-                    Model UN: Thursdays, 5:30 PM - 7:30 PM
+                    Philosophy Club: Monday 3:30 - 5:30 p.m.<br />
+                  <br />
                   </p>
                 </div>
               </div>
