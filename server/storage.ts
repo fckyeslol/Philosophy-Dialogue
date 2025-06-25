@@ -138,15 +138,15 @@ En primer lugar, la aparición de las maquinarias industriales que nacen debido 
  A pesar de que se están creando nuevos mecanismos para la sustentación de las necesidades energéticas, como son las energías limpias y renovables, se está pasando por alto la raíz de la problemática, en la que encontramos como consecuencia, no solo la demanda excesiva de energía, sino en general de los recursos naturales, que se explotan de manera salvaje en aquellos países que cuentan con estos. 
 Según los datos publicados en la revista científica The Lancet, del informe internacional presentado por La Universidad Autónoma de Barcelona, desde 1970 hasta 2017 Estados Unidos representa el 27% de uso excesivo de materiales en el mundo, seguido de este la UE con un 25% (incluyendo a Reino Unido). Para que se pueda comprender lo preocupante de estas cifras, hay que tener en cuenta que se han extraído en total 2.500 millones de toneladas de recursos naturales en todo el planeta, ahora bien más de la mitad del uso de estos recursos recae, en los estados mencionados con anterioridad. Y, que al sumar los indicadores de todos los países del sur global, o  sea América Latina, Caribe, África, Medio Oriente y gran parte de Asia, únicamente representan el 8% de uso excesivo de estos materiales.
 Al respecto se señala que la razón principal por la que existe este desfase entre Estados Unidos y un gran número de países, en la utilización de recursos naturales, a priori, es debido al modelo capitalista donde la propiedad privada y el supuesto libre mercado son el eje de la economía, en el cual es necesaria la extracción masiva de los recursos para poder cumplir con el ideal planteado en este sistema, que es el crecimiento exponencial e infinito de la economía, pero que no prevalece el medio ambiente en la ecuación de crecimiento exponencial económico, ya que, aunque exista la posibilidad de crecer la economía de manera infinita, los recursos naturales con los que contamos son limitados.
-	Retomando la tesis planteada en este escrito con los argumentos desarrollados, este ensayo no pretende agotar la discusión ni mucho menos suministrar una respuesta absoluta, pero al tiempo nos posiciona ante la necesidad imperativa de mantener abierta la reflexión filosófica desde la permanente interrogación para identificar la relación entre la crisis ambiental, la aparición de las maquinarias industriales y el interés empresarial por el uso desmedido de recursos naturales, con el objetivo de proponer un camino que lleve a la solución de la situación problema con el propósito de reestructurar el sistema político y socioeconómico, dando como manifiesto la necesidad de mantener la reflexión filosófica alrededor de la pregunta como la luz que ilumine el sendero a transitar en el Antropoceno.
-	Para finalizar se plantean unas interrogantes que permitirán la reflexión con respecto a la problemática tratada en este ensayo:
+        Retomando la tesis planteada en este escrito con los argumentos desarrollados, este ensayo no pretende agotar la discusión ni mucho menos suministrar una respuesta absoluta, pero al tiempo nos posiciona ante la necesidad imperativa de mantener abierta la reflexión filosófica desde la permanente interrogación para identificar la relación entre la crisis ambiental, la aparición de las maquinarias industriales y el interés empresarial por el uso desmedido de recursos naturales, con el objetivo de proponer un camino que lleve a la solución de la situación problema con el propósito de reestructurar el sistema político y socioeconómico, dando como manifiesto la necesidad de mantener la reflexión filosófica alrededor de la pregunta como la luz que ilumine el sendero a transitar en el Antropoceno.
+        Para finalizar se plantean unas interrogantes que permitirán la reflexión con respecto a la problemática tratada en este ensayo:
 ¿Por qué se debe promover la concientización ambiental?
 ¿Cuáles son las medidas inmediatas que se deben de tomar por parte del ciudadano promedio para enfrentar la crisis climática?
 ¿Cómo se puede contribuir desde el seno del hogar y familiar a la concientización de la problemática ambiental?
 
 Referencias
 
-Cuomo, C. (2017). Against the Idea of an Anthropocene Epoch: Ethical, Political and Scientific Concerns. Biogeosystem Technique, 4(1), 4–8.   https://doi.org/10.13187/bgt.2017.1.4	
+Cuomo, C. (2017). Against the Idea of an Anthropocene Epoch: Ethical, Political and Scientific Concerns. Biogeosystem Technique, 4(1), 4–8.   https://doi.org/10.13187/bgt.2017.1.4     
 Serratos, F. (2020). El capitaloceno.  Universidad Nacional Autónoma de México
 United Nations [UN]. (s/f). ¿Qué es el cambio climático? | Naciones Unidas., de https://www.un.org/es/climatechange/what-is-climate-change
 Hickel, J., O'Neill, D. W., Fanning, A. L., & Zoomkawala, H. (2022). National responsibility for ecological breakdown: a fair-shares assessment of resource use, 1970–2017. The Lancet. Planetary Health, 6(4), e342–e349. https://doi.org/10.1016/S2542-5196(22)00044-4`,
@@ -242,7 +242,8 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
       date: "2024",
       imageUrl: "/images/ocftodos.webp"
     });
-    
+  }
+
   // User operations (existing)
   async getUser(id: number): Promise<User | undefined> {
     return this.users.get(id);
