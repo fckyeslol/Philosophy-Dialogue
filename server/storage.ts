@@ -196,39 +196,51 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
 
     // Sample gallery images
     this.createGalleryImage({
-      title: "Philosophy Discussion",
-      date: "2024",
-      imageUrl: "https://images.unsplash.com/photo-1541339907198-e08756dedf3f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "Marcemun",
+      date: "2025",
+      imageUrl: "/images/marcemun.png"
     });
 
     this.createGalleryImage({
-      title: "Model UN Conference",
-      date: "2024",
-      imageUrl: "https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "AISMUN",
+      date: "2025",
+      imageUrl: "/images/aismun.png"
     });
 
     this.createGalleryImage({
-      title: "Debate Competition",
-      date: "2024",
-      imageUrl: "https://images.unsplash.com/photo-1577563908411-5077b6dc7624?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "Marcemun premios",
+      date: "2025",
+      imageUrl: "/images/marcemun-premios.png"
     });
 
     this.createGalleryImage({
-      title: "Club Meeting",
-      date: "2024",
-      imageUrl: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      title: "AISMUN Comission",
+      date: "2025",
+      imageUrl: "/images/aismun-todos.png"
     });
 
     this.createGalleryImage({
-      title: "Guest Lecture",
+      title: "OCF",
       date: "2024",
-      imageUrl: "https://images.unsplash.com/photo-1524178232363-1fb2b075b655?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/ocf.png"
     });
 
     this.createGalleryImage({
-      title: "Student Presentation",
+      title: "Un Cafe Con Sofia",
       date: "2024",
-      imageUrl: "https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      imageUrl: "/images/un-cafe-con-sofia.png"
+    });
+
+    this.createGalleryImage({
+      title: "MUNUN",
+      date: "2024",
+      imageUrl: "/images/munun.png"
+    });
+
+    this.createGalleryImage({
+      title: "OCF",
+      date: "2024",
+      imageUrl: "/images/ocftodos.webp"
     });
   }
 
