@@ -238,18 +238,11 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
     });
 
     this.createGalleryImage({
-      title: "Philosophy Discussion",
+      title: "OCF",
       date: "2024",
-      imageUrl: "/images/antropoceno.webp"
+      imageUrl: "/images/ocftodos.webp"
     });
-
-    this.createGalleryImage({
-      title: "Diogenes Study",
-      date: "2024",
-      imageUrl: "/images/diogenes.gif"
-    });
-  }
-
+    
   // User operations (existing)
   async getUser(id: number): Promise<User | undefined> {
     return this.users.get(id);

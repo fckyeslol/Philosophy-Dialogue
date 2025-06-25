@@ -108,8 +108,7 @@ const Contact = () => {
                 <div>
                   <h4 className="font-medium text-lg">Email</h4>
                   <p className="text-neutral-300">
-                    
-                    mateopirela08@gmail.com</p>
+                    jgonzalez@iedalexandervonhumboldt.edu.co</p>
                 </div>
               </div>
               <div className="flex items-start">

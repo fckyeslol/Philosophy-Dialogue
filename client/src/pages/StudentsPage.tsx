@@ -182,7 +182,7 @@ const StudentsPage = () => {
                     <FormItem>
                       <FormLabel>Full Name</FormLabel>
                       <FormControl>
-                        <Input placeholder="John Doe" {...field} />
+                        <Input placeholder="Daniela Rodriguez" {...field} />
                       </FormControl>
                       <FormMessage />
                     </FormItem>
