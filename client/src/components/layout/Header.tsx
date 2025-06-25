@@ -117,15 +117,11 @@ const Header = () => {
             <Link href="/gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Gallery
             </Link>
-            <Link href="/students" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
-              Students
-            </Link>
+
             <Link href="/#blog" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Blog
             </Link>
-            <Link href="/#gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
-              Gallery
-            </Link>
+
           </nav>
           
           {/* Right side buttons */}

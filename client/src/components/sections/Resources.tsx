@@ -50,8 +50,8 @@ const Resources = () => {
                   </div>
                 </li>
               </ul>
-              <Button variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors">
-                Access Philosophy Resources
+              <Button asChild variant="outline" className="w-full border-primary text-primary hover:bg-primary hover:text-white transition-colors">
+                <a href="/resources">Access Philosophy Resources</a>
               </Button>
             </CardContent>
           </Card>
@@ -93,8 +93,8 @@ const Resources = () => {
                   </div>
                 </li>
               </ul>
-              <Button variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors">
-                Access Debate Resources
+              <Button asChild variant="outline" className="w-full border-secondary text-secondary hover:bg-secondary hover:text-white transition-colors">
+                <a href="/resources?tab=debate">Access Debate Resources</a>
               </Button>
             </CardContent>
           </Card>
@@ -136,8 +136,8 @@ const Resources = () => {
                   </div>
                 </li>
               </ul>
-              <Button variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white transition-colors">
-                Access Model UN Resources
+              <Button asChild variant="outline" className="w-full border-accent text-accent hover:bg-accent hover:text-white transition-colors">
+                <a href="/resources?tab=model-un">Access Model UN Resources</a>
               </Button>
             </CardContent>
           </Card>

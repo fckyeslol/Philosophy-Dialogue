@@ -1,5 +1,6 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { useQuery } from "@tanstack/react-query";
+import { useLocation } from "wouter";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import { Button } from "@/components/ui/button";
@@ -97,7 +98,16 @@ const LoadingResourceCard = () => (
 );
 
 const ResourcesPage = () => {
+  const [location] = useLocation();
   const [activeTab, setActiveTab] = useState<string>("philosophy");
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const tabParam = urlParams.get('tab');
+    if (tabParam && ['philosophy', 'debate', 'model-un'].includes(tabParam)) {
+      setActiveTab(tabParam);
+    }
+  }, [location]);
   
   const { data: resources = [], isLoading } = useQuery<ResourceLink[]>({ 
     queryKey: ['/api/resources'],
@@ -231,14 +241,7 @@ const ResourcesPage = () => {
         </TabsContent>
       </Tabs>
 
-      <div className="border-t border-gray-200 pt-8 text-center">
-        <p className="text-gray-600 mb-4">
-          Have a resource to suggest? Let us know through our contact form!
-        </p>
-        <Button asChild>
-          <a href="/contact#contact?subject=resource">Suggest a Resource</a>
-        </Button>
-      </div>
+
     </div>
   );
 };

@@ -7,7 +7,6 @@ import {
   insertBlogPostSchema, 
   insertMemberSchema, 
   insertGalleryImageSchema,
-  insertStudentSchema,
   insertResourceLinkSchema
 } from "@shared/schema";
 import { z } from "zod";
@@ -99,47 +98,6 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(400).json({ message: 'Invalid form data', errors: error.errors });
       }
       res.status(500).json({ message: 'Failed to submit contact form' });
-    }
-  });
-
-  // Students Repository Endpoints
-  // Get all students
-  app.get('/api/students', async (req, res) => {
-    try {
-      const students = await storage.getAllStudents();
-      res.json(students);
-    } catch (error) {
-      res.status(500).json({ message: 'Failed to fetch students' });
-    }
-  });
-
-  // Get student by ID
-  app.get('/api/students/:id', async (req, res) => {
-    try {
-      const id = parseInt(req.params.id);
-      const student = await storage.getStudent(id);
-      
-      if (!student) {
-        return res.status(404).json({ message: 'Student not found' });
-      }
-      
-      res.json(student);
-    } catch (error) {
-      res.status(500).json({ message: 'Failed to fetch student' });
-    }
-  });
-
-  // Add a new student
-  app.post('/api/students', async (req, res) => {
-    try {
-      const validatedData = insertStudentSchema.parse(req.body);
-      const student = await storage.createStudent(validatedData);
-      res.status(201).json(student);
-    } catch (error) {
-      if (error instanceof z.ZodError) {
-        return res.status(400).json({ message: 'Invalid student data', errors: error.errors });
-      }
-      res.status(500).json({ message: 'Failed to add student' });
     }
   });
 

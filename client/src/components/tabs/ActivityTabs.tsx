@@ -62,8 +62,8 @@ const ActivityTabs = ({ defaultValue = "philosophy" }: ActivityTabsProps) => {
                 <li>Annual philosophy essay competition</li>
               </ul>
               <div className="mt-6">
-                <a href="#resources" className="text-primary hover:text-primary-dark font-medium flex items-center">
-                  <span>Philosophy Resources</span>
+                <a href="/resources" className="text-primary hover:text-primary-dark font-medium flex items-center">
+                  <span>Access Philosophy Resources</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -102,8 +102,8 @@ const ActivityTabs = ({ defaultValue = "philosophy" }: ActivityTabsProps) => {
                 <li>Debate workshops for beginners and advanced debaters</li>
               </ul>
               <div className="mt-6">
-                <a href="#resources" className="text-secondary hover:text-secondary-dark font-medium flex items-center">
-                  <span>Debate Resources</span>
+                <a href="/resources?tab=debate" className="text-secondary hover:text-secondary-dark font-medium flex items-center">
+                  <span>Access Debate Resources</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
@@ -128,8 +128,8 @@ const ActivityTabs = ({ defaultValue = "philosophy" }: ActivityTabsProps) => {
                 <li>Collaboration with international affairs departments and organizations</li>
               </ul>
               <div className="mt-6">
-                <a href="#resources" className="text-accent hover:text-accent-dark font-medium flex items-center">
-                  <span>Model UN Resources</span>
+                <a href="/resources?tab=model-un" className="text-accent hover:text-accent-dark font-medium flex items-center">
+                  <span>Access Model UN Resources</span>
                   <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
                     <path fillRule="evenodd" d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z" clipRule="evenodd" />
                   </svg>
