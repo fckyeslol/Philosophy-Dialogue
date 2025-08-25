@@ -17,7 +17,7 @@ const Blog = ({ posts }: BlogProps) => {
           <p className="max-w-3xl mx-auto text-neutral-600">Explore articles, debates, and reflections written by our members.</p>
           <div className="h-1 w-20 bg-primary mx-auto mt-4"></div>
         </div>
-        
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {posts.length > 0 ? (
             posts.map((post) => (
@@ -44,7 +44,9 @@ const Blog = ({ posts }: BlogProps) => {
                     <span className="text-neutral-500 text-sm ml-auto">{post.date}</span>
                   </div>
                   <h3 className="font-heading text-xl font-semibold mb-3">{post.title}</h3>
-                  <p className="text-neutral-600 mb-4 line-clamp-3">{post.excerpt}</p>
+                  <p className="text-neutral-600 mb-4 line-clamp-3">
+                {post.excerpt || (post.content ? post.content.charAt(0).toUpperCase() + post.content.slice(1, 150) + '...' : 'No content available')}
+              </p>
                   <div className="flex items-center mt-4">
                     <img 
                       src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=80&q=80" 
@@ -63,7 +65,7 @@ const Blog = ({ posts }: BlogProps) => {
             </div>
           )}
         </div>
-        
+
         <div className="mt-12 text-center">
           <Button variant="link" className="text-primary hover:text-primary-dark">
             View All Articles
