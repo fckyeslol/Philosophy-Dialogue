@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Claritas Guide Chat Widget</title>
+    <style>
+        /* Hide class for managing visibility */
+        .hidden {
+            display: none;
+        }
+
+        /* Floating Chat Button Styles */
+        .chat-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #0F2E53;
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            box-shadow: 0 4px 12px rgba(15, 46, 83, 0.3);
+            z-index: 1000;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Hover effect for chat button */
+        .chat-button:hover {
+            transform: scale(1.1);
+            box-shadow: 0 6px 16px rgba(15, 46, 83, 0.4);
+        }
+
+        /* Chat button icon (speech bubble SVG) */
+        .chat-button svg {
+            width: 24px;
+            height: 24px;
+            fill: none;
+            stroke: white;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* Modal Backdrop */
+        .modal-backdrop {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5);
+            z-index: 1001;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        /* Modal Container */
+        .modal-container {
+            width: 380px;
+            height: 500px;
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            animation: modalSlideIn 0.3s ease-out;
+        }
+
+        /* Modal animation */
+        @keyframes modalSlideIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9) translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1) translateY(0);
+            }
+        }
+
+        /* Modal Header */
+        .modal-header {
+            background-color: #0F2E53;
+            color: white;
+            padding: 16px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-shrink: 0;
+        }
+
+        .modal-header h3 {
+            margin: 0;
+            font-size: 18px;
+            font-weight: 600;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+        }
+
+        /* Close Button */
+        .close-button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 24px;
+            cursor: pointer;
+            padding: 0;
+            width: 24px;
+            height: 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 4px;
+            transition: background-color 0.2s ease;
+        }
+
+        .close-button:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+        }
+
+        /* Modal Body */
+        .modal-body {
+            flex: 1;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+        }
+
+        .modal-body h4 {
+            color: #0F2E53;
+            margin: 0 0 12px 0;
+            font-size: 20px;
+            font-weight: 600;
+        }
+
+        .modal-body p {
+            color: #6c757d;
+            margin: 0 0 24px 0;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+
+        /* Wisdom Icon */
+        .wisdom-icon {
+            width: 80px;
+            height: 80px;
+            margin-bottom: 20px;
+            background: linear-gradient(135deg, #0F2E53 0%, #1a4d7a 100%);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 8px 20px rgba(15, 46, 83, 0.2);
+        }
+
+        .wisdom-icon svg {
+            width: 40px;
+            height: 40px;
+            fill: none;
+            stroke: white;
+            stroke-width: 1.5;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        /* Integration Button */
+        .integration-button {
+            background: linear-gradient(135deg, #0F2E53 0%, #1a4d7a 100%);
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 8px;
+            font-size: 14px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            font-family: inherit;
+        }
+
+        .integration-button:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 12px rgba(15, 46, 83, 0.3);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 480px) {
+            .modal-container {
+                width: 100%;
+                height: 100%;
+                border-radius: 0;
+                margin: 0;
+            }
+            
+            .modal-backdrop {
+                padding: 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Demo content to show the button works on any page -->
+    <div style="height: 200vh; padding: 40px; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;">
+        <h1 style="color: #0F2E53;">Philosophy & Diplomacy Club</h1>
+        <p>This is demo content to show how the floating chat button works. Scroll down to see that the button stays fixed in position.</p>
+        <p>The button will always be visible in the bottom-right corner, no matter what page content is displayed.</p>
+        <div style="margin-top: 100vh;">
+            <h2>More Content</h2>
+            <p>Even when you scroll, the Claritas Guide chat button remains accessible.</p>
+        </div>
+    </div>
+
+    <!-- Floating Chat Button -->
+    <button class="chat-button" id="chatButton" aria-label="Open Claritas Guide Chat">
+        <!-- Speech Bubble SVG Icon -->
+        <svg viewBox="0 0 24 24">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <!-- Chat Modal (initially hidden) -->
+    <div class="modal-backdrop hidden" id="chatModal">
+        <div class="modal-container">
+            <!-- Modal Header -->
+            <div class="modal-header">
+                <h3>Claritas Guide</h3>
+                <button class="close-button" id="closeButton" aria-label="Close chat">
+                    ×
+                </button>
+            </div>
+            
+            <!-- Modal Body -->
+            <div class="modal-body">
+                <div class="wisdom-icon">
+                    <!-- Owl/Wisdom SVG Icon -->
+                    <svg viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="10"></circle>
+                        <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
+                        <line x1="12" y1="17" x2="12.01" y2="17"></line>
+                    </svg>
+                </div>
+                <h4>Welcome to Claritas Guide</h4>
+                <p>Your intellectual companion for Philosophy, Debate, and Model United Nations. I bring clarity to complex ideas and help you excel in these prestigious disciplines.</p>
+                <button class="integration-button" onclick="window.open('/', '_self')">
+                    Start Conversation
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Get DOM elements
+        const chatButton = document.getElementById('chatButton');
+        const chatModal = document.getElementById('chatModal');
+        const closeButton = document.getElementById('closeButton');
+
+        // Function to open the modal
+        function openModal() {
+            chatModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden'; // Prevent background scrolling
+        }
+
+        // Function to close the modal
+        function closeModal() {
+            chatModal.classList.add('hidden');
+            document.body.style.overflow = ''; // Restore background scrolling
+        }
+
+        // Event Listeners
+
+        // Open modal when chat button is clicked
+        chatButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            openModal();
+        });
+
+        // Close modal when close button is clicked
+        closeButton.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            closeModal();
+        });
+
+        // Close modal when backdrop is clicked (but not when modal container is clicked)
+        chatModal.addEventListener('click', function(e) {
+            if (e.target === chatModal) {
+                closeModal();
+            }
+        });
+
+        // Close modal when Escape key is pressed
+        document.addEventListener('keydown', function(e) {
+            if (e.key === 'Escape' && !chatModal.classList.contains('hidden')) {
+                closeModal();
+            }
+        });
+
+        // Prevent modal container clicks from closing the modal
+        document.querySelector('.modal-container').addEventListener('click', function(e) {
+            e.stopPropagation();
+        });
+
+        // Add smooth scroll behavior and ensure button stays on top
+        window.addEventListener('scroll', function() {
+            // Optional: Add any scroll-based animations or adjustments here
+            // The button will stay fixed due to CSS positioning
+        });
+
+        // Console log for debugging
+        console.log('Claritas Guide Chat Widget loaded successfully');
+    </script>
+</body>
+</html>
