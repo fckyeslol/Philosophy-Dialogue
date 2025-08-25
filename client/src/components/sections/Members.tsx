@@ -37,26 +37,6 @@ const Members = ({ members }: MembersProps) => {
                     {member.role}
                   </p>
                   <p className="text-neutral-600 mb-4">{member.bio}</p>
-                  <div className="flex space-x-2 mt-4">
-                    <a 
-                      href="#" 
-                      className={`text-neutral-500 hover:${
-                        member.focus === 'Philosophy' ? 'text-primary' : 
-                        member.focus === 'Debate' ? 'text-secondary' : 'text-accent'
-                      }`}
-                    >
-                      <LinkedinIcon className="h-5 w-5" />
-                    </a>
-                    <a 
-                      href="#" 
-                      className={`text-neutral-500 hover:${
-                        member.focus === 'Philosophy' ? 'text-primary' : 
-                        member.focus === 'Debate' ? 'text-secondary' : 'text-accent'
-                      }`}
-                    >
-                      <Mail className="h-5 w-5" />
-                    </a>
-                  </div>
                 </CardContent>
               </Card>
             ))
