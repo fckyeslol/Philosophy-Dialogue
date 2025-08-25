@@ -16,8 +16,13 @@ const MyEssays = () => {
   // Filter for essays (you can adjust this filter based on your needs)
   const essays = blogPosts.filter(post => 
     post.category === "filosofia" || 
+    post.category === "philosophy" ||
     post.title.toLowerCase().includes("ensayo") ||
-    post.title.toLowerCase().includes("essay")
+    post.title.toLowerCase().includes("essay") ||
+    post.title.toLowerCase().includes("revolución") ||
+    post.title.toLowerCase().includes("pesadilla") ||
+    post.title.toLowerCase().includes("izquierda") ||
+    post.title.toLowerCase().includes("derecha")
   );
 
   const [selectedEssay, setSelectedEssay] = useState<BlogPost | null>(null);
