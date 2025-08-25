@@ -1,4 +1,4 @@
-import { 
+  import { 
   type Event, type InsertEvent, events,
   type Member, type InsertMember, members,
   type BlogPost, type InsertBlogPost, blogPosts,
@@ -153,7 +153,8 @@ Hickel, J., O'Neill, D. W., Fanning, A. L., & Zoomkawala, H. (2022). National re
       excerpt: "Explorando los conceptos clave que caracterizan el antropoceno.",
       category: "filosofia",
       date: "10 abril, 2024",
-      imageUrl: "/images/antropoceno.webp"
+      imageUrl: "/images/antropoceno.webp",
+      authorId: 1
     });
 
     this.createBlogPost({
@@ -181,16 +182,85 @@ Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituy
       excerpt: "Una reflexión filosófica a través de los ojos de Diógenes de Sinope.",
       category: "filosofia",
       date: "10 abril, 2024",
-      imageUrl: "/images/diogenes.gif"
+      imageUrl: "/images/diogenes.gif",
+      authorId: 1
     });
 
     this.createBlogPost({
-      title: "Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.",
-      content: `Rsssssssss`,
-      excerpt: "Explorando los conceptos clave que caracterizan el antropoceno.",
+      title: "¿Izquierda o Derecha?: Filosofía de la lucha de poderes",
+      content: `¿Izquierda o Derecha?: Filosofía de la lucha de poderes
+Desde tiempos que hoy parecen lejanos, se hablaba de división de poderes, de lucha
+incesante por dominar, por vencer; actualmente seguimos viendo como la polarización nubla
+perspectivas. Los orígenes de estos términos ideológicos, derecha e izquierda, datan
+específicamente en 1789, Europa, la revolución francesa y la convocatoria de la Asamblea de los
+Estados Generales, donde claramente los miembros de esta al querer demostrar su posición no solo
+ideológica sino también a favor o no del rey, se asignaron puestos. A la derecha se sentaban los
+que estaban de acuerdo con el monarca Luis XVI de Francia y sus ideales, entre tanto que los
+revolucionarios lo hacían a la izquierda.
+Mientras que en Europa ser de derecha habla de “conservadurismo” y ser de izquierda
+implica ser “socialista”, en Estados Unidos los de izquierda son “demócratas”, así que es clave
+destacar que no en todas las partes del mundo ser de izquierda o de derecha tiene la misma
+connotación, pero lo que sí es igual para todas las culturas, idiomas o sistemas políticos es el
+significado de la máxima “Divide y vencerás”; frase del común a la cual no se le atribuye autor
+pero si bien tiene razón, en la obra, El arte de la guerra, se supo ampliar de la mejor manera, ya
+que Sun Tzu (2023) señala que “el control de una fuerza grande es el mismo principio que el
+control de unos pocos hombres: se trata simplemente de dividir sus números”. Ahora el
+interrogante es ¿El que nosotros como pueblo elijamos un bando u otro no es solo una estrategia
+de las elites para dividirnos y así tener control de las masas?
+Según Kofman (2006), cuando se nos obliga a pensar en términos estrictamente opuestos,
+como extremos irreconciliables, perdemos la oportunidad de encontrar soluciones más complejas
+y efectivas, ya que esta forma de pensar limita el análisis y fomenta respuestas simplistas; lo que
+puede explicar el por qué las personas actualmente se dejan llevar por la polarización y no son
+
+críticas con respecto a personajes políticos sólo porque estos son de la bancada que los representa,
+sin detenerse a pensar si realmente estas personas los representan.
+Estamos como sociedad distópica y abrumada siempre buscando donde pertenecer y nos
+entregamos a un extremo o al otro, creyendo que esto será la solución al problema sin entender
+que caemos en la trampa del “divide y vencerás”: porque al estar en discordia, el pueblo nunca
+gana. Dejamos que, los poderosos, los que rigen, controlen, porque nosotros estamos ocupados
+poniendo etiquetas y dividiéndonos como sociedad cada vez más, lo que hace que las voces pierdan
+fuerza. Somos culpables de una fragmentación social que, dentro de poco, ya no tendrá reversa.
+Claro ejemplo de que la polarización política y la escogencia de “bandos” distorsiona
+nuestra visión política e incluso nuestra humanidad es el caso del atentado del Congresista y
+precandidato presidencial Miguel Uribe Turbay el pasado 7 de junio del presente año. Mientras
+que él se debatía entre la vida y la muerte, estaban muchos colombianos creando teorías y
+afirmando rumores por plataformas como X o Facebook; personas de izquierda incluso afirmaban
+que era un autoatentado y personas de derecha alegando que era un intento de asesinato que venía
+de parte de la izquierda y su gobierno, todos sin pruebas.
+¿Realmente el culpar a una ideología u otra podía subsanar lo ocurrido? Rotundamente no,
+pero mientras que nosotros estábamos indolentes eligiendo posiciones a la derecha o a la izquierda
+del rey como en 1789, en Colombia, 2025, seguía habiendo desigualdad social, los índices de
+pobreza aumentaban, la violencia e inseguridad local seguía haciéndose notar y el candidato seguía
+en cama.
+Es tiempo de entender que el dividirnos no traerá ningún tipo de éxito, que, si queremos
+salvar nuestra nación, la unión hace la fuerza. Impedir que se pierda el poder que tenemos como
+pueblo, fuerte y extenso, es nuestro deber como ciudadanos pensantes. Construir un futuro utópico
+
+en el que la fragmentación social no sea una realidad, oponerse a que sea utilizada como estrategia
+por el poder dominante para evitar la formación de mayorías hegemónicas que mantienen la
+sociedad dividida. Es tiempo de ser un solo pueblo, y mirar hacia el frente, a nuestro presente y
+nuestro futuro: no a la derecha, ni a la izquierda.
+
+Referencias
+
+LW. (2024, noviembre 3). �Son de izquierda y derecha? Que son los demócratas y
+republicanos en USA. Marca.
+https://www.marca.com/mx/actualidad/2024/11/03/6727ee87e2704e36518b4583.html
+
+Sadurní, J. M. (2012, noviembre 16). La Revolución Francesa: el fin del Antiguo Régimen.
+National geographic.
+https://historia.nationalgeographic.com.es/a/revolucion-francesa-fin-antiguo-regimen-2_6774
+
+Sun Tzu. (2023). El arte de la guerra (A. Galvany, Trad.). Editorial Trotta. (Trabajo original
+del siglo IV a.C.)
+
+Kofman, F. (2006). Conscious business: How to build value through values. Harvard
+Business Review Press.`,
+      excerpt: "Reflexion acerca de la polarizacion politica contemporanea.",
       category: "filosofia",
-      date: "10 abril, 2024",
-      imageUrl: "/images/antropoceno.webp"
+      date: "12 abril, 2025",
+      imageUrl: "/images/politics.jpg",
+      authorId: 1
     });
   
 
