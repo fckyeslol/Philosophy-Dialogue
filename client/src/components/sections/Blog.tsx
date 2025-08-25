@@ -53,7 +53,7 @@ const Blog = ({ posts }: BlogProps) => {
                       alt="Author" 
                       className="h-10 w-10 rounded-full mr-3" 
                     />
-                    <span className="text-sm font-medium">Author Name</span>
+                    <span className="text-sm font-medium">Mateo Pirela</span>
                     <a href="#" className="ml-auto text-primary hover:text-primary-dark font-medium">Read More</a>
                   </div>
                 </CardContent>
