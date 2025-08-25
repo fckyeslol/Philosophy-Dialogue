@@ -18,7 +18,7 @@ const Chatbot = () => {
     {
       id: '1',
       role: 'assistant',
-      content: 'Hello! I\'m here to help you with questions about philosophy, debate, and humanities. What would you like to explore today?',
+      content: 'Greetings! I am The Claritas Guide—your intellectual companion on this Humanities Hub. My name comes from the Latin for "clarity" and "fame," reflecting my mission to bring clarity to complex ideas in Philosophy, Debate, and Model United Nations.\n\nWhether you\'re grappling with Kant\'s categorical imperative, crafting a compelling debate argument, or understanding UN Security Council procedures, I\'m here to guide you with patience and insight.\n\nWhat philosophical question, debate strategy, or MUN procedure would you like to explore today?',
       timestamp: new Date()
     }
   ]);
@@ -88,11 +88,10 @@ const Chatbot = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-heading font-bold text-neutral-800 mb-4">
-            Philosophy & Humanities Assistant
+            The Claritas Guide
           </h2>
           <p className="max-w-3xl mx-auto text-neutral-600">
-            Ask questions about philosophy, debate techniques, Model UN procedures, or any humanities topic. 
-            Our AI assistant is here to help you explore ideas and deepen your understanding.
+            Your intellectual mentor for Philosophy, Debate, and Model United Nations. I bring clarity to complex ideas and help you excel in these prestigious disciplines through patient guidance and critical thinking.
           </p>
           <div className="h-1 w-20 bg-primary mx-auto mt-4"></div>
         </div>
@@ -101,7 +100,7 @@ const Chatbot = () => {
           <CardHeader className="border-b">
             <CardTitle className="flex items-center gap-2 text-xl">
               <MessageCircle className="h-6 w-6 text-primary" />
-              Chat with our Humanities Assistant
+              Chat with The Claritas Guide
             </CardTitle>
           </CardHeader>
           <CardContent className="p-0">
@@ -154,7 +153,7 @@ const Chatbot = () => {
             <div className="border-t p-4">
               <div className="flex gap-2">
                 <Input
-                  placeholder="Ask about philosophy, debate, Model UN, or any humanities topic..."
+                  placeholder="Ask me about philosophical concepts, debate strategies, MUN procedures, or critical thinking..."
                   value={inputMessage}
                   onChange={(e) => setInputMessage(e.target.value)}
                   onKeyPress={handleKeyPress}
@@ -166,7 +165,7 @@ const Chatbot = () => {
                 </Button>
               </div>
               <p className="text-xs text-neutral-500 mt-2">
-                Try asking: "What is Socratic questioning?", "How do I structure a debate argument?", or "What are the main UN committees?"
+                Try asking: "Explain Kant's categorical imperative", "How do I refute an opponent's argument?", or "What are points of information in MUN?"
               </p>
             </div>
           </CardContent>
