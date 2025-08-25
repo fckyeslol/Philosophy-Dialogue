@@ -39,7 +39,7 @@ const Blog = ({ posts }: BlogProps) => {
                           : 'bg-accent-light/10 text-accent-light'
                       } text-xs font-semibold px-2 py-1 rounded`}
                     >
-                      {post.category.charAt(0).toUpperCase() + post.category.slice(1)}
+                      {post.category ? post.category.charAt(0).toUpperCase() + post.category.slice(1) : 'General'}
                     </Badge>
                     <span className="text-neutral-500 text-sm ml-auto">{post.date}</span>
                   </div>
