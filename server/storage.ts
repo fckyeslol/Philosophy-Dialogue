@@ -1,4 +1,4 @@
-  import { 
+import {
   type Event, type InsertEvent, events,
   type Member, type InsertMember, members,
   type BlogPost, type InsertBlogPost, blogPosts,
@@ -132,10 +132,10 @@ export class MemStorage implements IStorage {
       title: "Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.",
       content: `Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos.
 En la actualidad, las problemáticas ambientales se encuentran intrínsecamente relacionadas con los avances tecnológicos que datan en la revolución industrial, desde 1780 hasta 1850, los cuales han determinado una crisis que permea en la preocupación de los gobiernos y los activistas ambientales, cuyos planteamientos derivan discusiones de suma relevancia tanto en el marco político, como en las perspectivas sociales que promueven la concientización de las acciones humanas frente a este fenómeno. En el presente texto, se establece la problemática central del antropoceno para exponer dos argumentos que se sustentan desde fuentes académicas.
-El concepto clave denominado Antropoceno constituye una época geológica caracterizada por la dominancia del impacto humano sobre el planeta, que según Cuomo. (2017) se refiere “al hecho de que los seres humanos (anthropos) influyen, como nunca antes en la historia, en los diferentes sistemas existentes en la Tierra, así como en otras especies. Esto produce cambios impredecibles y perdurables” (p.4). La relación de Cuomo con la revolución industrial del siglo XVIII hace pensar que, la utilización de maquinarias para la realización de los trabajos crea una demanda insaciable de recursos energéticos, que para esta época solo se podía realizar con la extracción de energía fósil, la que proviene de la quema de combustibles como el carbón y el petróleo, este procedimiento genera los llamados gases de efecto invernadero, como lo son el dióxido de carbono y el metano que actúan como una manta que recubre la tierra, y retiene el calor solar, el cual produce el aumento de las temperaturas. 
+El concepto clave denominado Antropoceno constituye una época geológica caracterizada por la dominancia del impacto humano sobre el planeta, que según Cuomo. (2017) se refiere “al hecho de que los seres humanos (anthropos) influyen, como nunca antes en la historia, en los diferentes sistemas existentes en la Tierra, así como en otras especies. Esto produce cambios impredecibles y perdurables” (p.4). La relación de Cuomo con la revolución industrial del siglo XVIII hace pensar que, la utilización de maquinarias para la realización de los trabajos crea una demanda insaciable de recursos energéticos, que para esta época solo se podía realizar con la extracción de energía fósil, la que proviene de la quema de combustibles como el carbón y el petróleo, este procedimiento genera los llamados gases de efecto invernadero, como lo son el dióxido de carbono y el metano que actúan como una manta que recubre la tierra, y retiene el calor solar, el cual produce el aumento de las temperaturas.
 Desde la perspectiva personal, plantear la problemática permite en primera instancia, citar a Santayana. (1905). "Los que no pueden recordar el pasado están condenados a repetirlo"(p.44). Lo cual significa, que como pensaba Michel Foucault, Karl Marx, diversos sociólogos y economistas, el entendimiento de la historia, y los hechos que la marcaron es fundamental para la comprensión de las problemáticas contemporáneas y el enfrentamiento de estas mismas. Por lo tanto, ubicarse desde el análisis histórico en el desarrollo de la problemática ambiental actual, en comparación con los avances industriales y tecnológicos determina que los efectos de la revolución industrial influyen negativamente en la producción de gases de efecto invernadero, debido, a la aparición de las maquinarias industriales y el interés empresarial por el uso desmedido de recursos naturales.
 En primer lugar, la aparición de las maquinarias industriales que nacen debido a la abismal demanda de energía presentada como consecuencia de la revolución industrial y el nuevo sistema económico inciden negativamente, así como lo señala Serratos (2021) Plantea que necesitamos cambiar el sistema económico, que nos vende la idea de que es necesario destruir la naturaleza para obtener un bienestar.  Al respecto conviene decir que según la Organización de las Naciones Unidas (ONU), en el informe del Intergovernmental Panel on Climate Change (IPCC, 2021) el ser humano es responsable del calentamiento global de los últimos 200 años, donde se puede ver que la temperatura media de la tierra es 1,1ºC más elevada que a finales del siglo XIX. Ahora bien, paralelamente al incremento masivo de la producción de gases de efecto invernadero, se ha registrado, un hecho histórico que marcó un punto de inflexión en la producción de estos nocivos gases, que es la hegemonización mundial del sistema capitalista.
- A pesar de que se están creando nuevos mecanismos para la sustentación de las necesidades energéticas, como son las energías limpias y renovables, se está pasando por alto la raíz de la problemática, en la que encontramos como consecuencia, no solo la demanda excesiva de energía, sino en general de los recursos naturales, que se explotan de manera salvaje en aquellos países que cuentan con estos. 
+ A pesar de que se están creando nuevos mecanismos para la sustentación de las necesidades energéticas, como son las energías limpias y renovables, se está pasando por alto la raíz de la problemática, en la que encontramos como consecuencia, no solo la demanda excesiva de energía, sino en general de los recursos naturales, que se explotan de manera salvaje en aquellos países que cuentan con estos.
 Según los datos publicados en la revista científica The Lancet, del informe internacional presentado por La Universidad Autónoma de Barcelona, desde 1970 hasta 2017 Estados Unidos representa el 27% de uso excesivo de materiales en el mundo, seguido de este la UE con un 25% (incluyendo a Reino Unido). Para que se pueda comprender lo preocupante de estas cifras, hay que tener en cuenta que se han extraído en total 2.500 millones de toneladas de recursos naturales en todo el planeta, ahora bien más de la mitad del uso de estos recursos recae, en los estados mencionados con anterioridad. Y, que al sumar los indicadores de todos los países del sur global, o  sea América Latina, Caribe, África, Medio Oriente y gran parte de Asia, únicamente representan el 8% de uso excesivo de estos materiales.
 Al respecto se señala que la razón principal por la que existe este desfase entre Estados Unidos y un gran número de países, en la utilización de recursos naturales, a priori, es debido al modelo capitalista donde la propiedad privada y el supuesto libre mercado son el eje de la economía, en el cual es necesaria la extracción masiva de los recursos para poder cumplir con el ideal planteado en este sistema, que es el crecimiento exponencial e infinito de la economía, pero que no prevalece el medio ambiente en la ecuación de crecimiento exponencial económico, ya que, aunque exista la posibilidad de crecer la economía de manera infinita, los recursos naturales con los que contamos son limitados.
         Retomando la tesis planteada en este escrito con los argumentos desarrollados, este ensayo no pretende agotar la discusión ni mucho menos suministrar una respuesta absoluta, pero al tiempo nos posiciona ante la necesidad imperativa de mantener abierta la reflexión filosófica desde la permanente interrogación para identificar la relación entre la crisis ambiental, la aparición de las maquinarias industriales y el interés empresarial por el uso desmedido de recursos naturales, con el objetivo de proponer un camino que lleve a la solución de la situación problema con el propósito de reestructurar el sistema político y socioeconómico, dando como manifiesto la necesidad de mantener la reflexión filosófica alrededor de la pregunta como la luz que ilumine el sendero a transitar en el Antropoceno.
@@ -161,22 +161,22 @@ Hickel, J., O'Neill, D. W., Fanning, A. L., & Zoomkawala, H. (2022). National re
       title: "La pesadilla moderna",
       content: `La pesadilla moderna
 
-Hace mucho tiempo, alrededor del 300 a.c, se encontraba Diógenes de Sinope en Atenas reposando debajo de la sombra  de un árbol de olivo. Tras unos minutos ahí, cierra sus ojos y cae en un sueño profundo. Después de cierto tiempo, Diógenes despierta, pero al levantarse queda anonadado. Se encontraba en un lugar distinto al que había quedado dormido. Al mirar a su alrededor se da cuenta que no solo no estaba debajo del árbol de olivo, se encontraba en un ambiente que nunca había visto. Todo era muy distinto a todo lo que había presenciado a lo largo de su vida. Diógenes se encontraba en un ambiente turbio y oscuro, sobre cargado de edificaciones, y lleno de unos objetos metálicos de gran magnitud que dentro llevaban personas las cuales él desconocía. Igualmente, al dar una vuelta notaba que había una gran multitud de personas, todas llevaban unas vestiduras extrañas, llevando la ropa superior separada a la inferior, portando en los pies unas extrañas coberturas de tela amarradas por un cordón. La gente en la calle caminaba como muy de prisa, no se detenían a reflexionar y platicar el uno con el otro, algunos incluso portaban unos objetos en las orejas que los aislaban de su alrededor. Pero lo que más le desconcertaba era que a pesar de haber recorrido el lugar por un rato, la cantidad de árboles que había visto era mucho menor a lo que él estaba acostumbrado a ver en Atenas. 
+Hace mucho tiempo, alrededor del 300 a.c, se encontraba Diógenes de Sinope en Atenas reposando debajo de la sombra  de un árbol de olivo. Tras unos minutos ahí, cierra sus ojos y cae en un sueño profundo. Después de cierto tiempo, Diógenes despierta, pero al levantarse queda anonadado. Se encontraba en un lugar distinto al que había quedado dormido. Al mirar a su alrededor se da cuenta que no solo no estaba debajo del árbol de olivo, se encontraba en un ambiente que nunca había visto. Todo era muy distinto a todo lo que había presenciado a lo largo de su vida. Diógenes se encontraba en un ambiente turbio y oscuro, sobre cargado de edificaciones, y lleno de unos objetos metálicos de gran magnitud que dentro llevaban personas las cuales él desconocía. Igualmente, al dar una vuelta notaba que había una gran multitud de personas, todas llevaban unas vestiduras extrañas, llevando la ropa superior separada a la inferior, portando en los pies unas extrañas coberturas de tela amarradas por un cordón. La gente en la calle caminaba como muy de prisa, no se detenían a reflexionar y platicar el uno con el otro, algunos incluso portaban unos objetos en las orejas que los aislaban de su alrededor. Pero lo que más le desconcertaba era que a pesar de haber recorrido el lugar por un rato, la cantidad de árboles que había visto era mucho menor a lo que él estaba acostumbrado a ver en Atenas.
 
-Diógenes se sentía perdido, pero al mismo tiempo no podía guardar su curiosidad. 
-¿En dónde se encontraba? ¿Qué estaba sucediendo y por qué todo era tan distinto? 
+Diógenes se sentía perdido, pero al mismo tiempo no podía guardar su curiosidad.
+¿En dónde se encontraba? ¿Qué estaba sucediendo y por qué todo era tan distinto?
 Al cabo de un rato de estar navegando a la deriva por las calles que no parecían ser Grecia, la sed lo invadió, por lo que decidió entrar a un salón del que había observado a varias personas entrar y salir con bebidas. Cada vez era más impresionante lo que observaba. Esta vez, el espacio se le hacía más reconocido. De hecho, ya veía personas charlar unas con las otras, sin embargo, algunas sostenían en sus manos un extraño objeto pequeño y resplandeciente, que parecían hacerlos reír.
 Absorto en sus pensamientos, alguien lo tropieza y riega sobre su única prenda, una bebida, lo que causa que ahora tenga una gran mancha marrón sobre sí. Sin prestar mucha atención sobre lo recién ocurrido y sin decir una sola palabra, sale del lugar. Empieza a adaptarse a todo y a dejar de darle mucha importancia. Después de salir, nota a lo lejos lo que parece ser un hombre recostado sobre el piso, utilizando pocas prendas y sin muchas pertenencias a su alrededor. Del rostro de Diógenes brota lo que parece ser un rastro de alegría, pues piensa en que por fin ha encontrado un verdadero hombre, desapegado a cualquier tipo de cosa material. Sorprendido, se acerca para sentarse al lado de uno de sus iguales. El hombre, aunque extrañado, observa el aspecto de Diógenes y le comenta: - La situación cada vez es más difícil, ¿cierto? Aparte, con estas calores, ya no solo es difícil sustentarse y sobrevivir, pero encontrarle un lado agradable a la vida.- Diógenes, ahora confundido por las palabras del que pocas prendas lleva, le dice -¿A qué situación se refiere con tanto aborrecimiento de la vida?- Posterior a su pregunta y notando todo el desconcierto de Diógenes, el hombre, sin cuestionar todo su desconocimiento ante el mundo actual, le explica sobre los problemas que enfrenta y produce la humanidad, entre ellos, cómo este está en vía de destruir su propio hogar, el planeta tierra. Le habla de cómo, a pesar de no siempre haberse encontrado en la situación en la que está, hubieron varios acontecimientos que llevaron a que ya no poseyera lugar donde vivir ni cosas qué tener.
 
-Para este punto, era claro para Diógenes reconocer que se encontraba en un tiempo distinto al que pertenece. No tenía claro qué había hecho posible el que se encontrara en otro momento de la humanidad, pero era evidente lo poco que había cambiado la insistencia de las personas por crear y poseer cada vez más. Le era difícil entender y procesar todo lo que ocurría, más aún, tomó la decisión de enterarse de más, puesto que, de todo lo que había escuchado del que le había contado ser un 'indigente', le preocupó más el hecho que mencionara que las personas poco a poco y con todas sus invenciones, se encontraran destruyendo el lugar que habitamos todas las personas, que ahora se conoce como 'planeta tierra'. Diógenes se había propuesto entender todo lo que pasaba en ese momento, lo que, a pesar de no ser una acción que tomaría el filósofo en su cotidianidad, entendía que era necesario para poder seguir existiendo. 
+Para este punto, era claro para Diógenes reconocer que se encontraba en un tiempo distinto al que pertenece. No tenía claro qué había hecho posible el que se encontrara en otro momento de la humanidad, pero era evidente lo poco que había cambiado la insistencia de las personas por crear y poseer cada vez más. Le era difícil entender y procesar todo lo que ocurría, más aún, tomó la decisión de enterarse de más, puesto que, de todo lo que había escuchado del que le había contado ser un 'indigente', le preocupó más el hecho que mencionara que las personas poco a poco y con todas sus invenciones, se encontraran destruyendo el lugar que habitamos todas las personas, que ahora se conoce como 'planeta tierra'. Diógenes se había propuesto entender todo lo que pasaba en ese momento, lo que, a pesar de no ser una acción que tomaría el filósofo en su cotidianidad, entendía que era necesario para poder seguir existiendo.
 
-Habían pasado unos días desde que el filósofo cínico había llegado por primera vez al mundo actual. A pesar de tener que adaptarse a este, su pensamiento sobre la vida no había cambiado tanto con relación a cómo vivía antes de conocer el nuevo mundo. Conservaba parte del estilo de vida que llevaba antes, pues había aprendido que no solo se prohíben ciertos comportamientos al margen público, sino que también habrían reprendas en contra de él si no cumplía con el 'actuar debido'. Pensaba en aquella Grecia que tanto criticaba y que sin embargo no se comparaba con todo lo que pensaba de la actual. Cada vez aumentaba su incomprensión del actuar del ser humano, que, por lo que había estado leyendo en las bibliotecas que milagrosamente le permitían la entrada, actúa en detrimento de sí mismo y el ambiente en el que se encuentra. Así, las guerras que estaban por venir sobre su tiempo no solo acabarían con la vida de las personas, pero también afectaría la vida de la naturaleza y todos los animales que se encuentran en ella, que por razones atribuídas a explicaciones complicadas sobre cómo una genera a la otra, todo concluía en que las personas crean e inventan lo suficiente como para tener el poder de acabar con el único lugar que tienen para vivir. ¿Qué era eso de las máquinas?  ¿Por qué le era tan necesario al ser humano, actuar para obtener más, sin ser esto lo que les daría felicidad? Nunca comprendieron que la felicidad se encontraba en el desapego y en lugar de eso, se alejaban de su naturaleza y al final, su apego por las cosas superfluas, aquello que se suponía les iba a traer alegría sobre ellos mismos, causará su propia destrucción. 
+Habían pasado unos días desde que el filósofo cínico había llegado por primera vez al mundo actual. A pesar de tener que adaptarse a este, su pensamiento sobre la vida no había cambiado tanto con relación a cómo vivía antes de conocer el nuevo mundo. Conservaba parte del estilo de vida que llevaba antes, pues había aprendido que no solo se prohíben ciertos comportamientos al margen público, sino que también habrían reprendas en contra de él si no cumplía con el 'actuar debido'. Pensaba en aquella Grecia que tanto criticaba y que sin embargo no se comparaba con todo lo que pensaba de la actual. Cada vez aumentaba su incomprensión del actuar del ser humano, que, por lo que había estado leyendo en las bibliotecas que milagrosamente le permitían la entrada, actúa en detrimento de sí mismo y el ambiente en el que se encuentra. Así, las guerras que estaban por venir sobre su tiempo no solo acabarían con la vida de las personas, pero también afectaría la vida de la naturaleza y todos los animales que se encuentran en ella, que por razones atribuídas a explicaciones complicadas sobre cómo una genera a la otra, todo concluía en que las personas crean e inventan lo suficiente como para tener el poder de acabar con el único lugar que tienen para vivir. ¿Qué era eso de las máquinas?  ¿Por qué le era tan necesario al ser humano, actuar para obtener más, sin ser esto lo que les daría felicidad? Nunca comprendieron que la felicidad se encontraba en el desapego y en lugar de eso, se alejaban de su naturaleza y al final, su apego por las cosas superfluas, aquello que se suponía les iba a traer alegría sobre ellos mismos, causará su propia destrucción.
 
-Todas estas cuestiones lo inquietaban y mientras más conocía sobre el actuar del ser humano, menos dudaba en exclamar y pregonar todos sus pensamientos en público. Las plazas, los parques, las calles, se convertían cada día en escenario de todas sus quejas. La gente se aglomeraba o lo ignoraban. Aun así, de momento, nadie reconocía el por qué de su gran similitud con el filósofo griego Diógenes de Sinope. Aunque, algunos tantos habrán divagado en que se basaba y elegía vivir como lo hacía el antiguo cínico. 
+Todas estas cuestiones lo inquietaban y mientras más conocía sobre el actuar del ser humano, menos dudaba en exclamar y pregonar todos sus pensamientos en público. Las plazas, los parques, las calles, se convertían cada día en escenario de todas sus quejas. La gente se aglomeraba o lo ignoraban. Aun así, de momento, nadie reconocía el por qué de su gran similitud con el filósofo griego Diógenes de Sinope. Aunque, algunos tantos habrán divagado en que se basaba y elegía vivir como lo hacía el antiguo cínico.
 
-Diógenes había dejado de notar la extrañeza de vivir en el tiempo de la actual Atenas, hasta que un día despertó sin volver a reconocer el lugar en el que estaba. Esta vez, el levantarse le provocó lágrimas y gran estruendo afligía su corazón. Pues, observaba cautelosamente el nuevo lugar que le rodeaba y no era visible ni un solo árbol a su alrededor. El calor era aún más contundente que la anterior vez que había despertado sin entender el espacio en el que se encontraba y ya tenía presente la razón del por qué. Creía intuir qué pasaba y no podía creer la nueva realidad. Su desconcierto fue tal que al siquiera acercarse a las masas y enterarse que tenía la razón, no tuvo remedio que elegir dormir esperando a despertar de la pesadilla aún más contundente. Así que regresa a su nuevo punto de partida y vuelve a cerrar sus ojos. Fue ahí cuando comprendió que el ser humano no pudo recuperar su hogar porque nunca cesó ni dejó de lado sus ansias de poseer más. 
+Diógenes había dejado de notar la extrañeza de vivir en el tiempo de la actual Atenas, hasta que un día despertó sin volver a reconocer el lugar en el que estaba. Esta vez, el levantarse le provocó lágrimas y gran estruendo afligía su corazón. Pues, observaba cautelosamente el nuevo lugar que le rodeaba y no era visible ni un solo árbol a su alrededor. El calor era aún más contundente que la anterior vez que había despertado sin entender el espacio en el que se encontraba y ya tenía presente la razón del por qué. Creía intuir qué pasaba y no podía creer la nueva realidad. Su desconcierto fue tal que al siquiera acercarse a las masas y enterarse que tenía la razón, no tuvo remedio que elegir dormir esperando a despertar de la pesadilla aún más contundente. Así que regresa a su nuevo punto de partida y vuelve a cerrar sus ojos. Fue ahí cuando comprendió que el ser humano no pudo recuperar su hogar porque nunca cesó ni dejó de lado sus ansias de poseer más.
 
-Diógenes se despierta de su última siesta. Todavía sin abrir sus ojos, escucha el canto de los pájaros y el olor de la grama que sus manos tocan. Lentamente abre sus ojos, y siente una hoja caer sobre su cara, por encima de él se encuentra el árbol de olivo. Ve sus prendas y encuentra una vieja mancha marrón impregnada sobre la tela. Ya sabe la importancia del remedio del ser humano. 
+Diógenes se despierta de su última siesta. Todavía sin abrir sus ojos, escucha el canto de los pájaros y el olor de la grama que sus manos tocan. Lentamente abre sus ojos, y siente una hoja caer sobre su cara, por encima de él se encuentra el árbol de olivo. Ve sus prendas y encuentra una vieja mancha marrón impregnada sobre la tela. Ya sabe la importancia del remedio del ser humano.
 
 Teniendo en cuenta la idea de Antropoceno, ¿Pensar sobre el futuro se constituye en una utopía o en una distopía?`,
       excerpt: "Una reflexión filosófica a través de los ojos de Diógenes de Sinope.",
@@ -243,7 +243,7 @@ nuestro futuro: no a la derecha, ni a la izquierda.
 
 Referencias
 
-LW. (2024, noviembre 3). �Son de izquierda y derecha? Que son los demócratas y
+LW. (2024, noviembre 3). Son de izquierda y derecha? Que son los demócratas y
 republicanos en USA. Marca.
 https://www.marca.com/mx/actualidad/2024/11/03/6727ee87e2704e36518b4583.html
 
@@ -257,12 +257,11 @@ del siglo IV a.C.)
 Kofman, F. (2006). Conscious business: How to build value through values. Harvard
 Business Review Press.`,
       excerpt: "Reflexion acerca de la polarizacion politica contemporanea.",
-      category: "filosofia",
       date: "12 abril, 2025",
       imageUrl: "/images/politics.jpg",
       authorId: 1
     });
-  
+
 
     // Sample gallery images
     this.createGalleryImage({
@@ -359,10 +358,10 @@ Business Review Press.`,
 
   async createMember(insertMember: InsertMember): Promise<Member> {
     const id = this.memberCurrentId++;
-    const member: Member = { 
-      ...insertMember, 
+    const member: Member = {
+      ...insertMember,
       id,
-      imageUrl: insertMember.imageUrl || null 
+      imageUrl: insertMember.imageUrl || null
     };
     this.membersList.set(id, member);
     return member;
@@ -379,8 +378,8 @@ Business Review Press.`,
 
   async createBlogPost(insertBlogPost: InsertBlogPost): Promise<BlogPost> {
     const id = this.blogPostCurrentId++;
-    const blogPost: BlogPost = { 
-      ...insertBlogPost, 
+    const blogPost: BlogPost = {
+      ...insertBlogPost,
       id,
       imageUrl: insertBlogPost.imageUrl || null
     };
@@ -439,9 +438,9 @@ Business Review Press.`,
   async createStudent(insertStudent: InsertStudent): Promise<Student> {
     const id = this.studentCurrentId++;
     const now = new Date();
-    const student: Student = { 
-      ...insertStudent, 
-      id, 
+    const student: Student = {
+      ...insertStudent,
+      id,
       joinDate: now,
       isActive: insertStudent.isActive !== undefined ? insertStudent.isActive : true,
       phone: insertStudent.phone || null,
@@ -470,8 +469,8 @@ Business Review Press.`,
 
   async createResourceLink(insertResourceLink: InsertResourceLink): Promise<ResourceLink> {
     const id = this.resourceLinkCurrentId++;
-    const resourceLink: ResourceLink = { 
-      ...insertResourceLink, 
+    const resourceLink: ResourceLink = {
+      ...insertResourceLink,
       id,
       description: insertResourceLink.description || null
     };
@@ -480,7 +479,7 @@ Business Review Press.`,
   }
 }
 
-// Initialize the database with sample resource links
+// Initialize sample resource links for the repository
 const initializeResourceLinks = async (storage: MemStorage) => {
   // Philosophy resources
   await storage.createResourceLink({
