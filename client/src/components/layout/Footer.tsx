@@ -1,7 +1,7 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-import { FacebookIcon, TwitterIcon, InstagramIcon, LinkedinIcon } from "@/lib/icons";
+
 import { BookOpen } from "lucide-react";
 
 const Footer = () => {
@@ -17,20 +17,6 @@ const Footer = () => {
             <p className="text-neutral-400 mb-6">
               Fostering critical thinking, effective communication, and global awareness through philosophy, debate, and Model UN.
             </p>
-            <div className="flex space-x-4">
-              <a href="#" className="text-neutral-400 hover:text-accent transition-colors">
-                <FacebookIcon />
-              </a>
-              <a href="#" className="text-neutral-400 hover:text-accent transition-colors">
-                <TwitterIcon />
-              </a>
-              <a href="#" className="text-neutral-400 hover:text-accent transition-colors">
-                <InstagramIcon />
-              </a>
-              <a href="#" className="text-neutral-400 hover:text-accent transition-colors">
-                <LinkedinIcon />
-              </a>
-            </div>
           </div>
           
           <div>

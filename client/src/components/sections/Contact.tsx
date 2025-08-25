@@ -24,7 +24,7 @@ type ContactFormValues = z.infer<typeof contactFormSchema>;
 const Contact = () => {
   const { toast } = useToast();
   const [initialSubject, setInitialSubject] = useState("");
-  
+
   // Check for URL parameters on component mount
   useEffect(() => {
     // Check if URL has subject parameter
@@ -38,7 +38,7 @@ const Contact = () => {
       }
     }
   }, []);
-  
+
   const form = useForm<ContactFormValues>({
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
@@ -84,7 +84,7 @@ const Contact = () => {
           </p>
           <div className="h-1 w-20 bg-accent mx-auto mt-4"></div>
         </div>
-        
+
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
           <div>
             <h3 className="text-2xl font-heading font-semibold mb-6">Contact Information</h3>
@@ -97,7 +97,7 @@ const Contact = () => {
                   <h4 className="font-medium text-lg">Location</h4>
                   <p className="text-neutral-300">
                     Social talent salon<br />
-                   
+
                   </p>
                 </div>
               </div>
@@ -124,24 +124,11 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            
+
             <h3 className="text-2xl font-heading font-semibold mb-6">Follow Us</h3>
-            <div className="flex space-x-4">
-              <a href="#" className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
-                <FacebookIcon className="h-5 w-5" />
-              </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
-                <TwitterIcon className="h-5 w-5" />
-              </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
-                <InstagramIcon className="h-5 w-5" />
-              </a>
-              <a href="#" className="h-10 w-10 rounded-full bg-primary/20 flex items-center justify-center hover:bg-primary transition-colors">
-                <LinkedinIcon className="h-5 w-5" />
-              </a>
-            </div>
+            
           </div>
-          
+
           <div>
             <h3 className="text-2xl font-heading font-semibold mb-6">Send us a Message</h3>
             <Form {...form}>
@@ -163,7 +150,7 @@ const Contact = () => {
                     </FormItem>
                   )}
                 />
-                
+
                 <FormField
                   control={form.control}
                   name="email"
@@ -181,7 +168,7 @@ const Contact = () => {
                     </FormItem>
                   )}
                 />
-                
+
                 <FormField
                   control={form.control}
                   name="subject"
@@ -207,7 +194,7 @@ const Contact = () => {
                     </FormItem>
                   )}
                 />
-                
+
                 <FormField
                   control={form.control}
                   name="message"
@@ -226,7 +213,7 @@ const Contact = () => {
                     </FormItem>
                   )}
                 />
-                
+
                 <Button 
                   type="submit" 
                   className="w-full bg-accent hover:bg-accent-dark focus:ring-2 focus:ring-offset-2 focus:ring-offset-neutral-800 focus:ring-accent"
