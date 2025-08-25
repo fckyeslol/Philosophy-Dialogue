@@ -6,6 +6,7 @@ import Members from "@/components/sections/Members";
 import MyEssays from "@/components/sections/MyEssays";
 import Blog from "@/components/sections/Blog";
 import Gallery from "@/components/sections/Gallery";
+import Chatbot from "@/components/sections/Chatbot";
 import Contact from "@/components/sections/Contact";
 import { useQuery } from "@tanstack/react-query";
 import { Event, Member, BlogPost, GalleryImage } from "@shared/schema";
@@ -33,6 +34,7 @@ const Home = () => {
       <MyEssays />
       <Blog posts={blogPosts} />
       <Gallery images={galleryImages} />
+      <Chatbot />
       <Contact />
     </>
   );

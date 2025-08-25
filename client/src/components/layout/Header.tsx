@@ -31,7 +31,7 @@ const Header = () => {
               </span>
             </Link>
           </div>
-          
+
           {/* Mobile menu button */}
           <div className="-mr-2 -my-2 md:hidden">
             <Button
@@ -56,13 +56,13 @@ const Header = () => {
               </svg>
             </Button>
           </div>
-          
+
           {/* Desktop navigation */}
           <nav className="hidden md:flex space-x-10" aria-label="Main navigation">
             <Link href="/#about" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               About
             </Link>
-            
+
             <DropdownMenu>
               <DropdownMenuTrigger className="group inline-flex items-center font-accent text-base font-medium text-neutral-600 hover:text-primary focus:outline-none">
                 <span>Activities</span>
@@ -110,12 +110,16 @@ const Header = () => {
                 </Link>
               </DropdownMenuContent>
             </DropdownMenu>
-            
+
             <Link href="/resources" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Resources
             </Link>
-            <Link href="/gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+            <Link href="/#gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Gallery
+            </Link>
+
+            <Link href="/#chatbot" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+              AI Assistant
             </Link>
 
             <Link href="/#blog" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
@@ -123,7 +127,7 @@ const Header = () => {
             </Link>
 
           </nav>
-          
+
           {/* Right side buttons */}
           <div className="hidden md:flex items-center justify-end md:flex-1 lg:w-0">
             <a href="#contact">
@@ -134,7 +138,7 @@ const Header = () => {
           </div>
         </div>
       </div>
-      
+
       {/* Mobile menu */}
       <MobileMenu open={mobileMenuOpen} setOpen={setMobileMenuOpen} />
     </header>
