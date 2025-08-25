@@ -103,7 +103,7 @@ const FloatingChatWidget = () => {
       {/* Chat Modal */}
       {isOpen && (
         <div className="fixed inset-0 bg-black/50 z-50 flex items-center justify-center p-4">
-          <Card className="w-full max-w-md h-[550px] bg-white shadow-xl animate-in slide-in-from-bottom-4 duration-300">
+          <Card className="w-full max-w-md h-[600px] bg-white shadow-xl animate-in slide-in-from-bottom-4 duration-300">
             <CardHeader className="border-b bg-primary text-white rounded-t-lg">
               <div className="flex items-center justify-between">
                 <CardTitle className="flex items-center gap-2 text-lg">
@@ -121,7 +121,7 @@ const FloatingChatWidget = () => {
                 </Button>
               </div>
             </CardHeader>
-            <CardContent className="p-0 flex flex-col h-[490px]">
+            <CardContent className="p-0 flex flex-col h-[540px]">
               <ScrollArea className="flex-1 p-4">
                 <div className="space-y-4">
                   {messages.map((message) => (
