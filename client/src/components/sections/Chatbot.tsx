@@ -4,7 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { MessageCircle, Send, Bot, User } from "lucide-react";
+import { MessageCircle, Send, User } from "lucide-react";
+import claritasOwl from "@/assets/claritas-owl.png";
 
 interface Message {
   id: string;
@@ -99,7 +100,7 @@ const Chatbot = () => {
         <Card className="bg-white shadow-lg">
           <CardHeader className="border-b">
             <CardTitle className="flex items-center gap-2 text-xl">
-              <MessageCircle className="h-6 w-6 text-primary" />
+              <img src={claritasOwl} alt="Claritas Guide" className="h-8 w-8 rounded-full border-2 border-primary/20" />
               Chat with The Claritas Guide
             </CardTitle>
           </CardHeader>
@@ -115,9 +116,13 @@ const Chatbot = () => {
                       <div className={`flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center ${
                         message.role === 'user' 
                           ? 'bg-primary text-white' 
-                          : 'bg-secondary text-white'
+                          : 'bg-white border-2 border-secondary'
                       }`}>
-                        {message.role === 'user' ? <User className="h-4 w-4" /> : <Bot className="h-4 w-4" />}
+                        {message.role === 'user' ? (
+                          <User className="h-4 w-4" />
+                        ) : (
+                          <img src={claritasOwl} alt="Claritas" className="h-7 w-7 rounded-full object-cover" />
+                        )}
                       </div>
                       <div className={`rounded-lg px-4 py-2 ${
                         message.role === 'user'
@@ -135,8 +140,8 @@ const Chatbot = () => {
                 {isLoading && (
                   <div className="flex gap-3 justify-start">
                     <div className="flex gap-3 max-w-[80%]">
-                      <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center bg-secondary text-white">
-                        <Bot className="h-4 w-4" />
+                      <div className="flex-shrink-0 w-8 h-8 rounded-full flex items-center justify-center bg-white border-2 border-secondary">
+                        <img src={claritasOwl} alt="Claritas" className="h-7 w-7 rounded-full object-cover" />
                       </div>
                       <div className="rounded-lg px-4 py-2 bg-neutral-100 text-neutral-800">
                         <div className="flex space-x-1">
