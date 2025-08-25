@@ -46,13 +46,6 @@ const Members = ({ members }: MembersProps) => {
             </div>
           )}
         </div>
-        
-        <div className="mt-12 text-center">
-          <Button variant="link" className="text-primary hover:text-primary-dark">
-            View All Members
-            <ArrowRight className="ml-2 h-4 w-4" />
-          </Button>
-        </div>
       </div>
     </section>
   );
