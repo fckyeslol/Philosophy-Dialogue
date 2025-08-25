@@ -48,12 +48,15 @@ const Blog = ({ posts }: BlogProps) => {
                 {post.excerpt || (post.content ? post.content.charAt(0).toUpperCase() + post.content.slice(1, 150) + '...' : 'No content available')}
               </p>
                   <div className="flex items-center mt-4">
-                    <img 
-                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-1.2.1&auto=format&fit=crop&w=80&q=80" 
-                      alt="Author" 
-                      className="h-10 w-10 rounded-full mr-3" 
-                    />
-                    <span className="text-sm font-medium">Mateo Pirela</span>
+                    <span className="text-sm font-medium">
+                      Autor: {post.title === "Revolución Industrial y Antropoceno: Los Efectos de los Avances Tecnológicos." 
+                        ? "Mateo Pirela" 
+                        : post.title === "La pesadilla moderna" 
+                          ? "Airin Viaña" 
+                          : post.title === "¿Izquierda o Derecha?: Filosofía de la lucha de poderes" 
+                            ? "Daniela Rodriguez" 
+                            : "Mateo Pirela"}
+                    </span>
                     <a href="#" className="ml-auto text-primary hover:text-primary-dark font-medium">Read More</a>
                   </div>
                 </CardContent>
