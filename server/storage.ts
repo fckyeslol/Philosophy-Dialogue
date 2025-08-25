@@ -257,7 +257,6 @@ del siglo IV a.C.)
 Kofman, F. (2006). Conscious business: How to build value through values. Harvard
 Business Review Press.`,
       excerpt: "Reflexion acerca de la polarizacion politica contemporanea.",
-      category: "filosofia",
       date: "12 abril, 2025",
       imageUrl: "/images/politics.jpg",
       authorId: 1
@@ -265,11 +264,6 @@ Business Review Press.`,
 
 
     // Sample gallery images
-    this.createGalleryImage({
-      title: "Marcemun",
-      date: "2025",
-      imageUrl: "/images/marcemun.png"
-    });
 
     this.createGalleryImage({
       title: "AISMUN",
