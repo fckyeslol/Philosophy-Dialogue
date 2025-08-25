@@ -138,7 +138,7 @@ const ActivityTabs = ({ defaultValue = "philosophy" }: ActivityTabsProps) => {
             </div>
             <div>
               <img 
-                src="https://images.unsplash.com/photo-1531834685032-c34bf0d84c77?ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80" 
+                src="/images/marcemun.png" 
                 alt="Model UN conference" 
                 className="rounded-lg shadow-lg w-full h-auto object-cover"
               />
