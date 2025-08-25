@@ -118,9 +118,9 @@ const Header = () => {
               Gallery
             </Link>
 
-            <Link href="/#chatbot" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+            <a href="#chatbot" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               AI Assistant
-            </Link>
+            </a>
 
             <Link href="/#blog" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Blog
