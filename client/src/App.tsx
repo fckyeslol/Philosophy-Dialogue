@@ -11,6 +11,7 @@ import ResourcesPage from "@/pages/ResourcesPage";
 import GalleryPage from "@/pages/GalleryPage";
 import Header from "@/components/layout/Header";
 import Footer from "@/components/layout/Footer";
+import FloatingChatWidget from "@/components/FloatingChatWidget";
 
 function Router() {
   return (
@@ -26,6 +27,7 @@ function Router() {
         </Switch>
       </main>
       <Footer />
+      <FloatingChatWidget />
     </>
   );
 }
