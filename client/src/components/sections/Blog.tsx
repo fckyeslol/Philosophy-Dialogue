@@ -45,7 +45,7 @@ const Blog = ({ posts }: BlogProps) => {
                   </div>
                   <h3 className="font-heading text-xl font-semibold mb-3">{post.title}</h3>
                   <p className="text-neutral-600 mb-4 line-clamp-3">
-                {post.excerpt || (post.content ? post.content.charAt(0).toUpperCase() + post.content.slice(1, 150) + '...' : 'No content available')}
+                {post.excerpt || (post.content && post.content.length > 0 ? post.content.charAt(0).toUpperCase() + post.content.slice(1, 150) + '...' : 'No content available')}
               </p>
                   <div className="flex items-center mt-4">
                     <span className="text-sm font-medium">
