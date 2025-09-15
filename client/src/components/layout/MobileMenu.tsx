@@ -125,7 +125,7 @@ const MobileMenu = ({ open, setOpen }: MobileMenuProps) => {
                     Blog
                   </Link>
                   <Link
-                    href="/#gallery"
+                    href="/gallery"
                     className="font-accent text-base font-medium text-neutral-600 hover:text-primary flex items-center"
                     onClick={() => setOpen(false)}
                   >

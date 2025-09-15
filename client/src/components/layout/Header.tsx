@@ -114,7 +114,7 @@ const Header = () => {
             <Link href="/resources" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Resources
             </Link>
-            <Link href="/#gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
+            <Link href="/gallery" className="font-accent text-base font-medium text-neutral-600 hover:text-primary">
               Gallery
             </Link>
 
